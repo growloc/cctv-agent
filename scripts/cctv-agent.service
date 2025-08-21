@@ -1,0 +1,34 @@
+[Unit]
+Description=CCTV Agent Service
+Documentation=https://github.com/yourusername/cctv-agent
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/home/pi
+ExecStart=/usr/local/bin/cctv-agent --config /etc/cctv-agent/config.json
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=cctv-agent
+
+# Security settings
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=read-only
+ReadWritePaths=/etc/cctv-agent /var/log/cctv-agent
+
+# Resource limits
+LimitNOFILE=65536
+LimitNPROC=4096
+
+# Environment variables
+Environment="GOMAXPROCS=4"
+
+[Install]
+WantedBy=multi-user.target

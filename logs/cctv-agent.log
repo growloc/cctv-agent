@@ -1,0 +1,1252 @@
+{"level":"INFO","timestamp":"2025-08-20T23:42:46.566+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-20T23:42:46.567+0530","caller":"cctv-agent/main.go:197","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-20T23:42:46.567+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-20T23:42:46.567+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"ERROR","timestamp":"2025-08-20T23:42:46.571+0530","caller":"cctv-agent/main.go:222","msg":"Failed to connect to Socket.IO server","error":"failed to create socket.io client: Get \"http://localhost:8080/socket.io/socket.io/?t=1755713566000-0&transport=polling\": dial tcp 127.0.0.1:8080: connect: connection refused"}
+{"level":"INFO","timestamp":"2025-08-20T23:42:46.571+0530","caller":"cctv-agent/main.go:245","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-20T23:43:16.580+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"INFO","timestamp":"2025-08-20T23:43:25.837+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-20T23:43:25.837+0530","caller":"cctv-agent/main.go:251","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-20T23:43:25.837+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-20T23:43:25.837+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-20T23:43:25.837+0530","caller":"cctv-agent/main.go:269","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-20T23:43:29.775+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-20T23:43:29.776+0530","caller":"cctv-agent/main.go:197","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-20T23:43:29.776+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-20T23:43:29.776+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"ERROR","timestamp":"2025-08-20T23:43:29.780+0530","caller":"cctv-agent/main.go:222","msg":"Failed to connect to Socket.IO server","error":"failed to create socket.io client: Get \"http://localhost:8080/socket.io/socket.io/?t=1755713609000-0&transport=polling\": dial tcp 127.0.0.1:8080: connect: connection refused"}
+{"level":"INFO","timestamp":"2025-08-20T23:43:29.780+0530","caller":"cctv-agent/main.go:245","msg":"Application started successfully"}
+{"level":"INFO","timestamp":"2025-08-20T23:43:43.441+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-20T23:43:43.441+0530","caller":"cctv-agent/main.go:251","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-20T23:43:43.441+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-20T23:43:43.441+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-20T23:43:43.441+0530","caller":"cctv-agent/main.go:269","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T00:14:48.471+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T00:14:48.472+0530","caller":"cctv-agent/main.go:197","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T00:14:48.472+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T00:14:48.472+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"ERROR","timestamp":"2025-08-21T00:14:48.475+0530","caller":"cctv-agent/main.go:222","msg":"Failed to connect to Socket.IO server","error":"failed to create socket.io client: Get \"http://localhost:8080/socket.io/socket.io/?t=1755715488000-0&transport=polling\": dial tcp 127.0.0.1:8080: connect: connection refused"}
+{"level":"INFO","timestamp":"2025-08-21T00:14:48.475+0530","caller":"cctv-agent/main.go:245","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T00:15:18.488+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:15:48.481+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:16:18.486+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:16:48.483+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:17:18.488+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:17:48.485+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:18:18.488+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:18:48.507+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:19:18.491+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:19:48.493+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:20:18.486+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:20:48.486+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:21:18.485+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:21:48.482+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:22:18.483+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:22:48.479+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:23:18.483+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:23:48.485+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:24:18.482+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:24:48.471+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:25:18.458+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:25:48.455+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:26:18.456+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:26:48.459+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:27:18.453+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:27:48.454+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:28:18.450+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:28:48.454+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:29:18.461+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:29:48.457+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:30:18.453+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:30:48.458+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:31:18.459+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:31:48.447+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"INFO","timestamp":"2025-08-21T00:31:51.068+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T00:31:51.068+0530","caller":"cctv-agent/main.go:251","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T00:31:51.068+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T00:31:51.068+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T00:31:51.068+0530","caller":"cctv-agent/main.go:269","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T00:31:55.003+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T00:31:55.004+0530","caller":"cctv-agent/main.go:197","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T00:31:55.004+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T00:31:55.004+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"ERROR","timestamp":"2025-08-21T00:31:55.021+0530","caller":"cctv-agent/main.go:222","msg":"Failed to connect to Socket.IO server","error":"failed to create socket.io client: EOF"}
+{"level":"INFO","timestamp":"2025-08-21T00:31:55.021+0530","caller":"cctv-agent/main.go:245","msg":"Application started successfully"}
+{"level":"INFO","timestamp":"2025-08-21T00:31:59.360+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T00:31:59.360+0530","caller":"cctv-agent/main.go:251","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T00:31:59.360+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T00:31:59.360+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T00:31:59.360+0530","caller":"cctv-agent/main.go:269","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T00:32:17.305+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T00:32:17.306+0530","caller":"cctv-agent/main.go:197","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T00:32:17.306+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T00:32:17.306+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"ERROR","timestamp":"2025-08-21T00:32:17.311+0530","caller":"cctv-agent/main.go:222","msg":"Failed to connect to Socket.IO server","error":"failed to create socket.io client: EOF"}
+{"level":"INFO","timestamp":"2025-08-21T00:32:17.311+0530","caller":"cctv-agent/main.go:245","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T00:32:47.323+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:33:17.321+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:33:47.320+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:34:17.321+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:34:47.323+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"INFO","timestamp":"2025-08-21T00:35:06.372+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T00:35:06.372+0530","caller":"cctv-agent/main.go:251","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T00:35:06.372+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T00:35:06.372+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T00:35:06.372+0530","caller":"cctv-agent/main.go:269","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T00:52:57.603+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T00:52:57.604+0530","caller":"cctv-agent/main.go:197","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T00:52:57.604+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T00:52:57.604+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"ERROR","timestamp":"2025-08-21T00:54:04.541+0530","caller":"cctv-agent/main.go:222","msg":"Failed to connect to Socket.IO server","error":"failed to create socket.io client: Get \"http://localhost:9054/socket.io/custom-socket?t=1755717777000-0&transport=polling\": EOF"}
+{"level":"INFO","timestamp":"2025-08-21T00:54:04.543+0530","caller":"cctv-agent/main.go:245","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T00:54:34.552+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:55:04.553+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:55:34.551+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:56:04.551+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:56:34.552+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:57:04.578+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:57:34.585+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:58:04.586+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:58:34.588+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:59:04.585+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T00:59:34.582+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:00:04.582+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:00:34.584+0530","caller":"cctv-agent/main.go:390","msg":"Failed to send status report","error":"not connected"}
+{"level":"INFO","timestamp":"2025-08-21T01:00:59.376+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T01:00:59.376+0530","caller":"cctv-agent/main.go:251","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T01:00:59.376+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T01:00:59.376+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T01:00:59.376+0530","caller":"cctv-agent/main.go:269","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T01:01:03.332+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T01:01:03.333+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"http://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T01:01:03.333+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T01:01:03.333+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T01:01:03.333+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T01:01:03.333+0530","caller":"socketio/client.go:56","msg":"Connecting to Socket.IO server","url":"http://localhost:9054/custom-socket","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T01:02:05.636+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T01:02:05.637+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T01:02:05.637+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T01:02:05.637+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T01:02:05.637+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T01:02:05.637+0530","caller":"socketio/client.go:56","msg":"Connecting to Socket.IO server","url":"ws://localhost:9054/custom-socket","transport":"websocket"}
+{"level":"ERROR","timestamp":"2025-08-21T01:02:05.637+0530","caller":"cctv-agent/main.go:219","msg":"Failed to connect to Socket.IO server","error":"failed to create socket.io client: Get \"ws://localhost:9054/socket.io/custom-socket?t=1755718325000-0&transport=polling\": unsupported protocol scheme \"ws\""}
+{"level":"INFO","timestamp":"2025-08-21T01:02:05.637+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T01:02:35.648+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:03:05.659+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"INFO","timestamp":"2025-08-21T01:03:29.063+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T01:03:29.063+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T01:03:29.063+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T01:03:29.063+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T01:03:29.063+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T01:03:49.188+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T01:05:29.165+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T01:05:29.167+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T01:05:29.171+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T01:05:29.171+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T01:05:29.171+0530","caller":"socketio/client.go:56","msg":"Connecting to Socket.IO server","url":"ws://localhost:9054/custom-socket","transport":"websocket"}
+{"level":"ERROR","timestamp":"2025-08-21T01:05:29.172+0530","caller":"cctv-agent/main.go:219","msg":"Failed to connect to Socket.IO server","error":"failed to create socket.io client: Get \"ws://localhost:9054/socket.io/custom-socket?t=1755718529000-0&transport=polling\": unsupported protocol scheme \"ws\""}
+{"level":"INFO","timestamp":"2025-08-21T01:05:29.172+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"INFO","timestamp":"2025-08-21T01:05:29.173+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T01:05:29.173+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T01:05:29.173+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T01:05:29.173+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T01:05:29.173+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T01:07:48.943+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T01:07:48.944+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T01:07:48.944+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T01:07:48.944+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T01:07:48.944+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T01:07:48.944+0530","caller":"socketio/client.go:56","msg":"Connecting to Socket.IO server","url":"ws://localhost:9054/custom-socket","transport":"websocket"}
+{"level":"ERROR","timestamp":"2025-08-21T01:07:48.945+0530","caller":"cctv-agent/main.go:219","msg":"Failed to connect to Socket.IO server","error":"failed to create socket.io client: Get \"ws://localhost:9054/socket.io/custom-socket?t=1755718668000-0&transport=polling\": unsupported protocol scheme \"ws\""}
+{"level":"INFO","timestamp":"2025-08-21T01:07:48.945+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T01:08:18.957+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:08:48.952+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:09:18.950+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:09:48.956+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:10:18.951+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:10:48.962+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:11:18.954+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:11:48.954+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:12:18.954+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:12:48.967+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:13:18.979+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:13:48.980+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:14:18.979+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:14:48.979+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:15:18.988+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:15:48.983+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:16:18.979+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:16:48.982+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:17:18.980+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:17:48.982+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:18:18.979+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:18:48.979+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:19:18.984+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:19:48.981+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:20:18.980+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:20:48.983+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:21:18.979+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:21:48.982+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:22:18.981+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:22:48.983+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:23:18.982+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:23:48.982+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:24:18.983+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"INFO","timestamp":"2025-08-21T01:24:20.388+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T01:24:20.388+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T01:24:20.388+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T01:24:20.388+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T01:24:20.388+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T01:24:21.503+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T01:24:21.504+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T01:24:21.507+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T01:24:21.508+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T01:24:21.508+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T01:24:21.508+0530","caller":"socketio/client.go:56","msg":"Connecting to Socket.IO server","url":"ws://localhost:9054/custom-socket","transport":"websocket"}
+{"level":"ERROR","timestamp":"2025-08-21T01:24:21.508+0530","caller":"cctv-agent/main.go:219","msg":"Failed to connect to Socket.IO server","error":"failed to create socket.io client: Get \"ws://localhost:9054/socket.io/custom-socket?t=1755719661000-0&transport=polling\": unsupported protocol scheme \"ws\""}
+{"level":"INFO","timestamp":"2025-08-21T01:24:21.509+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T01:24:51.517+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"INFO","timestamp":"2025-08-21T01:25:00.443+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T01:25:00.444+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T01:25:00.444+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T01:25:00.444+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T01:25:00.444+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T01:25:04.296+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T01:25:04.297+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T01:25:04.297+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T01:25:04.297+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T01:25:04.297+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T01:25:04.297+0530","caller":"socketio/client.go:56","msg":"Connecting to Socket.IO server","url":"http://localhost:9054/custom-socket","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T01:25:22.615+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T01:25:22.615+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T01:25:22.616+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T01:25:22.616+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T01:25:22.616+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T01:25:22.616+0530","caller":"socketio/client.go:56","msg":"Connecting to Socket.IO server","url":"ws://localhost:9054/custom-socket","transport":"websocket"}
+{"level":"ERROR","timestamp":"2025-08-21T01:25:22.616+0530","caller":"cctv-agent/main.go:219","msg":"Failed to connect to Socket.IO server","error":"failed to create socket.io client: Get \"ws://localhost:9054/socket.io/custom-socket?t=1755719722000-0&transport=polling\": unsupported protocol scheme \"ws\""}
+{"level":"INFO","timestamp":"2025-08-21T01:25:22.616+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T01:25:52.628+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T01:26:22.626+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"INFO","timestamp":"2025-08-21T01:26:23.754+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T01:26:23.754+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T01:26:23.754+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T01:26:23.755+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T01:26:23.755+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T01:26:27.039+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T01:26:27.040+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T01:26:27.040+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T01:26:27.040+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T01:26:27.040+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T01:26:27.040+0530","caller":"socketio/client.go:56","msg":"Connecting to Socket.IO server","url":"http://localhost:9054/custom-socket","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T11:14:57.837+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T11:14:57.837+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T11:14:57.838+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T11:14:57.838+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T11:14:57.838+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T11:14:57.838+0530","caller":"socketio/client.go:66","msg":"Connecting to Socket.IO server","url":"http://ws://localhost:9054/custom-socket/","transport":"websocket"}
+{"level":"ERROR","timestamp":"2025-08-21T11:15:27.839+0530","caller":"cctv-agent/main.go:219","msg":"Failed to connect to Socket.IO server","error":"failed to create socket.io client: Get \"http://ws/socket.io/localhost:9054/custom-socket?t=1755755097000-0&transport=polling\": dial tcp 64.70.19.33:80: i/o timeout"}
+{"level":"INFO","timestamp":"2025-08-21T11:15:27.839+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T11:15:57.857+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T11:16:27.854+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T11:16:57.847+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T11:17:27.855+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T11:17:57.853+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T11:18:27.852+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T11:18:57.847+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T11:19:27.856+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T11:19:57.855+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"INFO","timestamp":"2025-08-21T11:20:24.327+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T11:20:24.327+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T11:20:24.327+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T11:20:24.327+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T11:20:24.327+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T11:46:57.213+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T11:46:57.214+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T11:46:57.214+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T11:46:57.214+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T11:46:57.214+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T11:46:57.214+0530","caller":"socketio/client.go:66","msg":"Connecting to Socket.IO server","url":"http://ws://localhost:9054/custom-socket/","transport":"websocket"}
+{"level":"ERROR","timestamp":"2025-08-21T11:47:27.215+0530","caller":"cctv-agent/main.go:219","msg":"Failed to connect to Socket.IO server","error":"failed to create socket.io client: Get \"http://ws/socket.io/localhost:9054/custom-socket?t=1755757017000-0&transport=polling\": dial tcp 64.70.19.33:80: i/o timeout"}
+{"level":"INFO","timestamp":"2025-08-21T11:47:27.215+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T11:47:57.222+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T11:48:27.223+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"INFO","timestamp":"2025-08-21T11:48:52.133+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T11:48:52.133+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T11:48:52.133+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T11:48:52.133+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T11:48:52.133+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T11:48:55.545+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T11:48:55.545+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T11:48:55.545+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T11:48:55.545+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T11:48:55.545+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T11:48:55.545+0530","caller":"socketio/client.go:66","msg":"Connecting to Socket.IO server","url":"http://ws://localhost:9054/custom-socket/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T11:49:14.619+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T11:49:14.619+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T11:49:14.619+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T11:49:14.620+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T11:49:14.620+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T11:49:14.620+0530","caller":"socketio/client.go:66","msg":"Connecting to Socket.IO server","url":"http://localhost:9054/custom-socket/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T11:49:49.352+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T11:49:49.352+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T11:49:49.353+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T11:49:49.353+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T11:49:49.353+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T11:49:49.353+0530","caller":"socketio/client.go:66","msg":"Connecting to Socket.IO server","url":"http://localhost:9054/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T11:50:58.783+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T11:50:58.783+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T11:50:58.783+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T11:50:58.784+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T11:50:58.784+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"ERROR","timestamp":"2025-08-21T11:50:58.784+0530","caller":"cctv-agent/main.go:219","msg":"Failed to connect to Socket.IO server","error":"failed to create socket.io client: Get \"localhost:9054?t=1755757258000-0&transport=polling\": unsupported protocol scheme \"localhost\""}
+{"level":"INFO","timestamp":"2025-08-21T11:50:58.784+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"INFO","timestamp":"2025-08-21T11:51:14.363+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T11:51:14.363+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T11:51:14.363+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T11:51:14.363+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T11:51:14.363+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T11:51:17.204+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T11:51:17.205+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T11:51:17.205+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T11:51:17.205+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T11:51:17.205+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"ERROR","timestamp":"2025-08-21T11:51:17.205+0530","caller":"cctv-agent/main.go:219","msg":"Failed to connect to Socket.IO server","error":"failed to create socket.io client: Get \"ws://localhost:9054/socket.io/?t=1755757277000-0&transport=polling\": unsupported protocol scheme \"ws\""}
+{"level":"INFO","timestamp":"2025-08-21T11:51:17.205+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"INFO","timestamp":"2025-08-21T11:51:36.686+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T11:51:36.687+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T11:51:36.687+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T11:51:36.687+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T11:51:36.687+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T11:51:39.798+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T11:51:39.798+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T11:51:39.798+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T11:51:39.798+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T11:51:39.798+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"ERROR","timestamp":"2025-08-21T11:52:01.205+0530","caller":"cctv-agent/main.go:219","msg":"Failed to connect to Socket.IO server","error":"failed to create socket.io client: Get \"http://localhost:9054/socket.io/?t=1755757299000-0&transport=polling\": EOF"}
+{"level":"INFO","timestamp":"2025-08-21T11:52:01.205+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T11:52:31.212+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T11:53:01.212+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T11:53:31.211+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T11:54:01.220+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T11:54:31.211+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T11:55:01.215+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T11:55:31.214+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T11:56:01.215+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"INFO","timestamp":"2025-08-21T11:56:18.569+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T11:56:18.569+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T11:56:18.569+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T11:56:18.569+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T11:56:18.569+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T11:56:19.514+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T11:56:19.514+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T11:56:19.515+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T11:56:19.515+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T11:56:19.515+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"ERROR","timestamp":"2025-08-21T11:56:19.525+0530","caller":"cctv-agent/main.go:219","msg":"Failed to connect to Socket.IO server","error":"failed to create socket.io client: invalid input"}
+{"level":"INFO","timestamp":"2025-08-21T11:56:19.525+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T11:56:49.533+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T11:57:19.536+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"INFO","timestamp":"2025-08-21T11:57:49.228+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T11:57:49.229+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T11:57:49.229+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T11:57:49.229+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T11:57:49.229+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T11:57:53.239+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T11:57:53.239+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T11:57:53.242+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T11:57:53.240+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T11:57:53.244+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T11:57:53.244+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T11:57:53.244+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T11:57:53.244+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T11:57:53.244+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"WARN","timestamp":"2025-08-21T11:57:53.244+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"ERROR","timestamp":"2025-08-21T11:58:37.528+0530","caller":"cctv-agent/main.go:219","msg":"Failed to connect to Socket.IO server","error":"failed to create socket.io client: invalid input"}
+{"level":"INFO","timestamp":"2025-08-21T11:58:37.529+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T11:59:07.531+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T11:59:37.525+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T12:00:07.527+0530","caller":"cctv-agent/main.go:387","msg":"Failed to send status report","error":"not connected"}
+{"level":"ERROR","timestamp":"2025-08-21T12:00:35.639+0530","caller":"cctv-agent/main.go:219","msg":"Failed to connect to Socket.IO server","error":"failed to create socket.io client: invalid input"}
+{"level":"INFO","timestamp":"2025-08-21T12:00:35.639+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"INFO","timestamp":"2025-08-21T12:00:35.639+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T12:00:35.639+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T12:00:35.639+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T12:00:35.639+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T12:00:35.639+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T12:00:35.694+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T12:00:35.694+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T12:00:35.694+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T12:00:35.694+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T12:00:35.694+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T12:00:36.942+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T12:00:36.945+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T12:00:36.946+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T12:00:36.946+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T12:00:36.946+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"ERROR","timestamp":"2025-08-21T12:03:23.297+0530","caller":"cctv-agent/main.go:219","msg":"Failed to connect to Socket.IO server","error":"failed to create socket.io client: invalid input"}
+{"level":"INFO","timestamp":"2025-08-21T12:03:23.300+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"INFO","timestamp":"2025-08-21T12:03:23.300+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T12:03:23.300+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T12:03:23.300+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T12:03:23.300+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T12:03:23.300+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T12:23:53.331+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T12:23:53.332+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T12:23:53.332+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T12:23:53.332+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T12:23:53.332+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T12:23:53.332+0530","caller":"socketio/client.go:63","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/custom-socket","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T12:23:53.337+0530","caller":"socketio/client.go:119","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T12:23:53.337+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T12:23:53.339+0530","caller":"socketio/client.go:93","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"INFO","timestamp":"2025-08-21T12:24:34.159+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T12:24:34.160+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T12:24:34.160+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T12:24:34.160+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T12:24:34.160+0530","caller":"socketio/client.go:138","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T12:24:34.160+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T12:24:38.251+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T12:24:38.252+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T12:24:38.252+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T12:24:38.252+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T12:24:38.252+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T12:24:38.252+0530","caller":"socketio/client.go:63","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/socket.io","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T12:24:38.258+0530","caller":"socketio/client.go:119","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/socket.io"}
+{"level":"INFO","timestamp":"2025-08-21T12:24:38.258+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T12:24:38.259+0530","caller":"socketio/client.go:93","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"INFO","timestamp":"2025-08-21T12:28:27.599+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T12:28:27.599+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T12:28:27.599+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T12:28:27.599+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T12:28:27.599+0530","caller":"socketio/client.go:138","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T12:28:27.599+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T12:28:32.044+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T12:28:32.044+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T12:28:32.044+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T12:28:32.044+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T12:28:32.044+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T12:28:32.044+0530","caller":"socketio/client.go:62","msg":"Connecting to Socket.IO server","base":"","ns":"","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T12:28:32.044+0530","caller":"socketio/client.go:138","msg":"Socket.IO client initialized","base":"","ns":""}
+{"level":"INFO","timestamp":"2025-08-21T12:28:32.044+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T12:28:32.048+0530","caller":"socketio/client.go:112","msg":"Socket.IO connect_error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:28:32.049+0530","caller":"socketio/client.go:69","msg":"Manager error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"WARN","timestamp":"2025-08-21T12:28:33.380+0530","caller":"socketio/client.go:78","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:28:33.382+0530","caller":"socketio/client.go:112","msg":"Socket.IO connect_error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:28:33.382+0530","caller":"socketio/client.go:69","msg":"Manager error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:28:33.382+0530","caller":"socketio/client.go:81","msg":"Manager reconnect error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"WARN","timestamp":"2025-08-21T12:28:35.821+0530","caller":"socketio/client.go:78","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:28:35.823+0530","caller":"socketio/client.go:112","msg":"Socket.IO connect_error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:28:35.823+0530","caller":"socketio/client.go:69","msg":"Manager error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:28:35.823+0530","caller":"socketio/client.go:81","msg":"Manager reconnect error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"WARN","timestamp":"2025-08-21T12:28:40.824+0530","caller":"socketio/client.go:78","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:28:40.828+0530","caller":"socketio/client.go:112","msg":"Socket.IO connect_error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:28:40.829+0530","caller":"socketio/client.go:69","msg":"Manager error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:28:40.829+0530","caller":"socketio/client.go:81","msg":"Manager reconnect error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"WARN","timestamp":"2025-08-21T12:28:45.830+0530","caller":"socketio/client.go:78","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:05.834+0530","caller":"socketio/client.go:112","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:05.835+0530","caller":"socketio/client.go:69","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:05.835+0530","caller":"socketio/client.go:81","msg":"Manager reconnect error","args":[{}]}
+{"level":"INFO","timestamp":"2025-08-21T12:29:08.215+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T12:29:08.215+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T12:29:08.215+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T12:29:08.215+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T12:29:08.215+0530","caller":"socketio/client.go:153","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T12:29:08.215+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T12:29:12.451+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T12:29:12.452+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T12:29:12.452+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T12:29:12.452+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T12:29:12.452+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T12:29:12.452+0530","caller":"socketio/client.go:62","msg":"Connecting to Socket.IO server","base":"","ns":"","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T12:29:12.452+0530","caller":"socketio/client.go:138","msg":"Socket.IO client initialized","base":"","ns":""}
+{"level":"INFO","timestamp":"2025-08-21T12:29:12.452+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:12.458+0530","caller":"socketio/client.go:112","msg":"Socket.IO connect_error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:12.458+0530","caller":"socketio/client.go:69","msg":"Manager error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"WARN","timestamp":"2025-08-21T12:29:13.459+0530","caller":"socketio/client.go:78","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:13.461+0530","caller":"socketio/client.go:112","msg":"Socket.IO connect_error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:13.462+0530","caller":"socketio/client.go:69","msg":"Manager error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:13.462+0530","caller":"socketio/client.go:81","msg":"Manager reconnect error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"WARN","timestamp":"2025-08-21T12:29:14.469+0530","caller":"socketio/client.go:78","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:14.478+0530","caller":"socketio/client.go:112","msg":"Socket.IO connect_error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:14.478+0530","caller":"socketio/client.go:69","msg":"Manager error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:14.478+0530","caller":"socketio/client.go:81","msg":"Manager reconnect error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"WARN","timestamp":"2025-08-21T12:29:19.403+0530","caller":"socketio/client.go:78","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:19.408+0530","caller":"socketio/client.go:112","msg":"Socket.IO connect_error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:19.408+0530","caller":"socketio/client.go:69","msg":"Manager error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:19.408+0530","caller":"socketio/client.go:81","msg":"Manager reconnect error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"WARN","timestamp":"2025-08-21T12:29:24.409+0530","caller":"socketio/client.go:78","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:44.411+0530","caller":"socketio/client.go:112","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:44.412+0530","caller":"socketio/client.go:69","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:44.412+0530","caller":"socketio/client.go:81","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:29:49.412+0530","caller":"socketio/client.go:78","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:49.417+0530","caller":"socketio/client.go:112","msg":"Socket.IO connect_error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:49.417+0530","caller":"socketio/client.go:69","msg":"Manager error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:49.417+0530","caller":"socketio/client.go:81","msg":"Manager reconnect error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"WARN","timestamp":"2025-08-21T12:29:54.418+0530","caller":"socketio/client.go:78","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:54.419+0530","caller":"socketio/client.go:112","msg":"Socket.IO connect_error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:54.419+0530","caller":"socketio/client.go:69","msg":"Manager error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:54.419+0530","caller":"socketio/client.go:81","msg":"Manager reconnect error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"WARN","timestamp":"2025-08-21T12:29:59.419+0530","caller":"socketio/client.go:78","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:59.423+0530","caller":"socketio/client.go:112","msg":"Socket.IO connect_error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:59.423+0530","caller":"socketio/client.go:69","msg":"Manager error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:29:59.423+0530","caller":"socketio/client.go:81","msg":"Manager reconnect error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"WARN","timestamp":"2025-08-21T12:30:04.424+0530","caller":"socketio/client.go:78","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:30:04.426+0530","caller":"socketio/client.go:112","msg":"Socket.IO connect_error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:30:04.426+0530","caller":"socketio/client.go:69","msg":"Manager error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:30:04.426+0530","caller":"socketio/client.go:81","msg":"Manager reconnect error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"WARN","timestamp":"2025-08-21T12:30:09.429+0530","caller":"socketio/client.go:78","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:30:09.434+0530","caller":"socketio/client.go:112","msg":"Socket.IO connect_error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:30:09.434+0530","caller":"socketio/client.go:69","msg":"Manager error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:30:09.434+0530","caller":"socketio/client.go:81","msg":"Manager reconnect error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"WARN","timestamp":"2025-08-21T12:30:14.435+0530","caller":"socketio/client.go:78","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:30:14.437+0530","caller":"socketio/client.go:112","msg":"Socket.IO connect_error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:30:14.437+0530","caller":"socketio/client.go:69","msg":"Manager error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:30:14.437+0530","caller":"socketio/client.go:81","msg":"Manager reconnect error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"WARN","timestamp":"2025-08-21T12:30:19.437+0530","caller":"socketio/client.go:78","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:30:19.438+0530","caller":"socketio/client.go:112","msg":"Socket.IO connect_error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:30:19.438+0530","caller":"socketio/client.go:69","msg":"Manager error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:30:19.438+0530","caller":"socketio/client.go:81","msg":"Manager reconnect error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"WARN","timestamp":"2025-08-21T12:30:24.440+0530","caller":"socketio/client.go:78","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:30:24.442+0530","caller":"socketio/client.go:112","msg":"Socket.IO connect_error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:30:24.442+0530","caller":"socketio/client.go:69","msg":"Manager error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:30:24.442+0530","caller":"socketio/client.go:81","msg":"Manager reconnect error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"WARN","timestamp":"2025-08-21T12:30:29.443+0530","caller":"socketio/client.go:78","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:30:29.444+0530","caller":"socketio/client.go:112","msg":"Socket.IO connect_error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:30:29.444+0530","caller":"socketio/client.go:69","msg":"Manager error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:30:29.444+0530","caller":"socketio/client.go:81","msg":"Manager reconnect error","args":[{"Message":"fetch read error","Description":{},"Type":"TransportError","Context":null}]}
+{"level":"INFO","timestamp":"2025-08-21T12:30:33.110+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T12:30:33.111+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T12:30:33.111+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T12:30:33.111+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T12:30:33.111+0530","caller":"socketio/client.go:153","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T12:30:33.111+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T12:30:37.974+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T12:30:37.974+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T12:30:37.975+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T12:30:37.975+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T12:30:37.975+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T12:30:37.975+0530","caller":"socketio/client.go:62","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T12:30:37.980+0530","caller":"socketio/client.go:138","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/"}
+{"level":"INFO","timestamp":"2025-08-21T12:30:37.980+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"INFO","timestamp":"2025-08-21T12:30:37.981+0530","caller":"socketio/client.go:90","msg":"Connected to Socket.IO server"}
+{"level":"INFO","timestamp":"2025-08-21T12:30:37.981+0530","caller":"cctv-agent/main.go:225","msg":"Socket.IO connected"}
+{"level":"INFO","timestamp":"2025-08-21T12:30:59.407+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T12:30:59.407+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T12:30:59.407+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T12:30:59.407+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T12:30:59.407+0530","caller":"socketio/client.go:153","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T12:30:59.407+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T12:31:04.125+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T12:31:04.125+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054/custom-socket","path":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T12:31:04.126+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T12:31:04.126+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T12:31:04.126+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T12:31:04.126+0530","caller":"socketio/client.go:62","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/custom-socket","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T12:31:04.132+0530","caller":"socketio/client.go:138","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/custom-socket"}
+{"level":"INFO","timestamp":"2025-08-21T12:31:04.132+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T12:31:04.133+0530","caller":"socketio/client.go:112","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"INFO","timestamp":"2025-08-21T12:34:03.488+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T12:34:03.490+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T12:34:03.490+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T12:34:03.490+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T12:34:03.490+0530","caller":"socketio/client.go:153","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T12:34:03.490+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T12:34:09.783+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T12:34:09.783+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054","path":"/socket.io"}
+{"level":"INFO","timestamp":"2025-08-21T12:34:09.783+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T12:34:09.783+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T12:34:09.783+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T12:34:09.783+0530","caller":"socketio/client.go:62","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T12:34:09.789+0530","caller":"socketio/client.go:140","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/"}
+{"level":"INFO","timestamp":"2025-08-21T12:34:09.789+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"INFO","timestamp":"2025-08-21T12:34:09.790+0530","caller":"socketio/client.go:93","msg":"Connected to Socket.IO server"}
+{"level":"INFO","timestamp":"2025-08-21T12:34:09.790+0530","caller":"cctv-agent/main.go:225","msg":"Socket.IO connected"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:34:34.790+0530","caller":"socketio/client.go:75","msg":"Manager ping"}
+{"level":"INFO","timestamp":"2025-08-21T12:34:58.811+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T12:34:58.811+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T12:34:58.811+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T12:34:58.811+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T12:34:58.811+0530","caller":"socketio/client.go:155","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T12:34:58.811+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T12:35:03.145+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T12:35:03.146+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054","path":"/socket.io"}
+{"level":"INFO","timestamp":"2025-08-21T12:35:03.146+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T12:35:03.146+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T12:35:03.146+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T12:35:03.146+0530","caller":"socketio/client.go:62","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T12:35:03.151+0530","caller":"socketio/client.go:140","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/"}
+{"level":"INFO","timestamp":"2025-08-21T12:35:03.151+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"INFO","timestamp":"2025-08-21T12:35:03.152+0530","caller":"socketio/client.go:93","msg":"Connected to Socket.IO server"}
+{"level":"INFO","timestamp":"2025-08-21T12:35:03.152+0530","caller":"cctv-agent/main.go:225","msg":"Socket.IO connected"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:35:03.152+0530","caller":"socketio/client.go:72","msg":"Welcome Done","args":[{"message":"Connected to custom Socket.IO server","socketId":"ACO1xbEhBbs_PQsUAAAM","timestamp":"2025-08-21T07:05:03.152Z"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T12:35:28.152+0530","caller":"socketio/client.go:75","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:35:53.154+0530","caller":"socketio/client.go:75","msg":"Manager ping"}
+{"level":"INFO","timestamp":"2025-08-21T12:36:07.502+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T12:36:07.502+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T12:36:07.502+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T12:36:07.502+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T12:36:07.502+0530","caller":"socketio/client.go:155","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T12:36:07.502+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T12:36:14.615+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T12:36:14.615+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054","path":"/socket.io"}
+{"level":"INFO","timestamp":"2025-08-21T12:36:14.615+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T12:36:14.616+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T12:36:14.616+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T12:36:14.616+0530","caller":"socketio/client.go:62","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T12:36:14.620+0530","caller":"socketio/client.go:137","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/"}
+{"level":"INFO","timestamp":"2025-08-21T12:36:14.620+0530","caller":"cctv-agent/main.go:242","msg":"Application started successfully"}
+{"level":"INFO","timestamp":"2025-08-21T12:36:14.621+0530","caller":"socketio/client.go:90","msg":"Connected to Socket.IO server"}
+{"level":"INFO","timestamp":"2025-08-21T12:36:14.621+0530","caller":"cctv-agent/main.go:225","msg":"Socket.IO connected"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:36:39.621+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:37:04.623+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:37:29.625+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:37:54.628+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:38:19.628+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:38:44.635+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"INFO","timestamp":"2025-08-21T12:38:55.364+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T12:38:55.364+0530","caller":"cctv-agent/main.go:248","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T12:38:55.364+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T12:38:55.364+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T12:38:55.364+0530","caller":"socketio/client.go:152","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T12:38:55.364+0530","caller":"cctv-agent/main.go:266","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T12:39:11.478+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T12:39:11.479+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054","path":"/socket.io"}
+{"level":"INFO","timestamp":"2025-08-21T12:39:11.479+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T12:39:11.479+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T12:39:11.479+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T12:39:11.479+0530","caller":"socketio/client.go:62","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T12:39:11.483+0530","caller":"socketio/client.go:137","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/"}
+{"level":"INFO","timestamp":"2025-08-21T12:39:11.483+0530","caller":"cctv-agent/main.go:248","msg":"Application started successfully"}
+{"level":"INFO","timestamp":"2025-08-21T12:39:11.484+0530","caller":"socketio/client.go:90","msg":"Connected to Socket.IO server"}
+{"level":"INFO","timestamp":"2025-08-21T12:39:11.484+0530","caller":"cctv-agent/main.go:225","msg":"Socket.IO connected"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:39:36.484+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:40:01.488+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:01.925+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:01.925+0530","caller":"cctv-agent/main.go:254","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:01.925+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:01.925+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:01.925+0530","caller":"socketio/client.go:152","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:01.925+0530","caller":"cctv-agent/main.go:272","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:06.902+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:06.903+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054","path":"/socket.io"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:06.903+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:06.903+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T12:40:06.903+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:06.903+0530","caller":"socketio/client.go:62","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:06.907+0530","caller":"socketio/client.go:137","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:06.907+0530","caller":"cctv-agent/main.go:248","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T12:40:06.909+0530","caller":"logger/logger.go:205","msg":"Ignored key without a value.","ignored":[{"message":"Connected to custom Socket.IO server","socketId":"kx972FW0Wv_Yi9XeAAAS","timestamp":"2025-08-21T07:10:06.908Z"}]}
+{"level":"INFO","timestamp":"2025-08-21T12:40:06.909+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO welcome %v"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:06.909+0530","caller":"socketio/client.go:90","msg":"Connected to Socket.IO server"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:06.909+0530","caller":"cctv-agent/main.go:235","msg":"Socket.IO connected"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:40:31.913+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:40.418+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:40.418+0530","caller":"cctv-agent/main.go:254","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:40.418+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:40.418+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:40.418+0530","caller":"socketio/client.go:152","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:40.418+0530","caller":"cctv-agent/main.go:272","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:44.379+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:44.380+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054","path":"/socket.io"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:44.380+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:44.380+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T12:40:44.380+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:44.380+0530","caller":"socketio/client.go:62","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:44.393+0530","caller":"socketio/client.go:137","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:44.393+0530","caller":"cctv-agent/main.go:248","msg":"Application started successfully"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:44.395+0530","caller":"socketio/client.go:90","msg":"Connected to Socket.IO server"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:44.395+0530","caller":"cctv-agent/main.go:235","msg":"Socket.IO connected"}
+{"level":"INFO","timestamp":"2025-08-21T12:40:54.962+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO welcome","data":[{"message":"Connected to custom Socket.IO server","socketId":"6jOmvulJoy6N2i8uAAAU","timestamp":"2025-08-21T07:10:44.395Z"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T12:41:09.395+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:41:34.399+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"INFO","timestamp":"2025-08-21T12:41:38.614+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T12:41:38.614+0530","caller":"cctv-agent/main.go:254","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T12:41:38.614+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T12:41:38.615+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T12:41:38.615+0530","caller":"socketio/client.go:152","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T12:41:38.615+0530","caller":"cctv-agent/main.go:272","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T12:41:42.882+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T12:41:42.882+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054","path":"/socket.io"}
+{"level":"INFO","timestamp":"2025-08-21T12:41:42.882+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T12:41:42.882+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T12:41:42.882+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T12:41:42.882+0530","caller":"socketio/client.go:62","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T12:41:42.887+0530","caller":"socketio/client.go:137","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/"}
+{"level":"INFO","timestamp":"2025-08-21T12:41:42.887+0530","caller":"cctv-agent/main.go:254","msg":"Application started successfully"}
+{"level":"INFO","timestamp":"2025-08-21T12:41:42.888+0530","caller":"socketio/client.go:90","msg":"Connected to Socket.IO server"}
+{"level":"INFO","timestamp":"2025-08-21T12:41:42.888+0530","caller":"cctv-agent/main.go:241","msg":"Socket.IO connected"}
+{"level":"INFO","timestamp":"2025-08-21T12:41:44.731+0530","caller":"cctv-agent/main.go:224","msg":"Socket.IO welcome","data":[{"message":"Connected to custom Socket.IO server","socketId":"f-C2rNMM5UuL-9I4AAAW","timestamp":"2025-08-21T07:11:42.888Z"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T12:42:07.891+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:42:32.895+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:42:57.899+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:43:22.902+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:43:47.903+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:44:12.906+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:44:37.911+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:45:02.914+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:45:27.917+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:45:52.918+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:46:17.924+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:46:42.927+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:47:07.933+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:47:32.939+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:47:57.941+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:48:22.943+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:48:47.946+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T12:49:12.947+0530","caller":"socketio/client.go:72","msg":"Manager ping"}
+{"level":"INFO","timestamp":"2025-08-21T12:49:13.681+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T12:49:13.681+0530","caller":"cctv-agent/main.go:260","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T12:49:13.681+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T12:49:13.681+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T12:49:13.681+0530","caller":"socketio/client.go:152","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T12:49:13.681+0530","caller":"cctv-agent/main.go:278","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T12:49:18.411+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T12:49:18.412+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054","path":"/socket.io"}
+{"level":"INFO","timestamp":"2025-08-21T12:49:18.412+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T12:49:18.412+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T12:49:18.412+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T12:49:18.412+0530","caller":"socketio/client.go:65","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T12:49:18.412+0530","caller":"socketio/client.go:142","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/"}
+{"level":"INFO","timestamp":"2025-08-21T12:49:18.412+0530","caller":"cctv-agent/main.go:254","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T12:49:38.414+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:49:38.414+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:49:39.697+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:49:59.698+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:49:59.701+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:49:59.701+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:50:02.552+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:50:22.554+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:50:22.554+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:50:22.554+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:50:27.383+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:50:47.385+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:50:47.385+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:50:47.385+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:50:52.386+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:51:12.389+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:51:12.389+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:51:12.389+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:51:17.392+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:51:37.396+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:51:37.396+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:51:37.396+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:51:42.397+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:52:02.399+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:52:02.399+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:52:02.399+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:52:07.401+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:52:28.410+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:52:28.410+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:52:28.410+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:52:33.411+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:52:53.414+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:52:53.414+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:52:53.414+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:52:58.415+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:53:19.419+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:53:19.420+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:53:19.420+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:53:24.422+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:53:44.424+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:53:44.424+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:53:44.424+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:53:49.427+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:54:09.429+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:54:09.429+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:54:09.429+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:54:14.431+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:54:34.432+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:54:34.432+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:54:34.432+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:54:39.434+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:55:00.447+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:55:00.447+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:55:00.447+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:55:05.448+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:55:25.450+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:55:25.450+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:55:25.450+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:55:30.451+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:55:50.452+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:55:50.453+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:55:50.453+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:55:55.457+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:56:15.458+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:56:15.459+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:56:15.459+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:56:20.459+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:56:40.463+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:56:40.463+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:56:40.463+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:56:45.464+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:57:05.467+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:57:05.468+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:57:05.468+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:57:10.469+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:57:30.470+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:57:30.471+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:57:30.471+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:57:35.472+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:57:55.475+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:57:55.475+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:57:55.475+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:58:00.476+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:58:20.478+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:58:20.478+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:58:20.478+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:58:25.479+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T12:58:45.485+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:58:45.485+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:58:45.485+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T12:58:50.486+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"INFO","timestamp":"2025-08-21T12:58:52.342+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T12:58:52.342+0530","caller":"cctv-agent/main.go:260","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T12:58:52.342+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T12:58:52.342+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T12:58:52.342+0530","caller":"socketio/client.go:157","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T12:58:52.342+0530","caller":"cctv-agent/main.go:278","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T12:58:54.854+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T12:58:54.854+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054","path":"/socket.io"}
+{"level":"INFO","timestamp":"2025-08-21T12:59:39.396+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T12:59:39.397+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T12:59:39.398+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T12:59:39.398+0530","caller":"socketio/client.go:65","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T12:59:39.398+0530","caller":"socketio/client.go:142","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/"}
+{"level":"INFO","timestamp":"2025-08-21T12:59:39.399+0530","caller":"cctv-agent/main.go:254","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T12:59:59.400+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T12:59:59.400+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T13:00:00.661+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T13:00:20.663+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:00:20.663+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:00:20.663+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T13:00:22.838+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T13:00:43.843+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:00:43.843+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:00:43.843+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T13:00:48.680+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"INFO","timestamp":"2025-08-21T13:01:06.232+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T13:01:06.232+0530","caller":"cctv-agent/main.go:260","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T13:01:06.232+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T13:01:06.232+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T13:01:06.232+0530","caller":"socketio/client.go:157","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T13:01:06.232+0530","caller":"cctv-agent/main.go:278","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T13:01:10.892+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T13:01:10.892+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054","path":"/socket.io"}
+{"level":"INFO","timestamp":"2025-08-21T13:01:15.275+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T13:01:15.275+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T13:01:15.275+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T13:01:15.275+0530","caller":"socketio/client.go:65","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T13:01:15.276+0530","caller":"socketio/client.go:142","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/"}
+{"level":"INFO","timestamp":"2025-08-21T13:01:15.276+0530","caller":"cctv-agent/main.go:254","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T13:01:35.277+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:01:35.277+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T13:01:36.597+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T13:01:56.598+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:01:56.598+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:01:56.598+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T13:01:58.428+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"INFO","timestamp":"2025-08-21T13:02:02.171+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T13:02:02.171+0530","caller":"cctv-agent/main.go:260","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T13:02:02.171+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T13:02:02.171+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T13:02:02.171+0530","caller":"socketio/client.go:157","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T13:02:02.171+0530","caller":"cctv-agent/main.go:278","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T13:02:06.859+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T13:02:06.859+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054","path":""}
+{"level":"INFO","timestamp":"2025-08-21T13:02:09.105+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T13:02:09.105+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T13:02:09.105+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T13:02:09.105+0530","caller":"socketio/client.go:65","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T13:02:10.119+0530","caller":"socketio/client.go:142","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/"}
+{"level":"INFO","timestamp":"2025-08-21T13:02:10.119+0530","caller":"cctv-agent/main.go:254","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T13:02:30.119+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:02:30.120+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T13:02:31.337+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"INFO","timestamp":"2025-08-21T13:02:33.851+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T13:02:33.851+0530","caller":"cctv-agent/main.go:260","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T13:02:33.851+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T13:02:33.851+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T13:02:33.851+0530","caller":"socketio/client.go:157","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T13:02:33.851+0530","caller":"cctv-agent/main.go:278","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T13:03:19.509+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T13:03:19.509+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054","path":"/socket.io"}
+{"level":"INFO","timestamp":"2025-08-21T13:03:19.510+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T13:03:19.510+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T13:03:19.510+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T13:03:19.510+0530","caller":"socketio/client.go:65","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T13:03:19.510+0530","caller":"socketio/client.go:142","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/"}
+{"level":"INFO","timestamp":"2025-08-21T13:03:19.510+0530","caller":"cctv-agent/main.go:254","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T13:03:39.512+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:03:39.512+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T13:03:40.954+0530","caller":"socketio/client.go:83","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T13:04:01.959+0530","caller":"socketio/client.go:117","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:04:01.959+0530","caller":"socketio/client.go:74","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:04:01.959+0530","caller":"socketio/client.go:86","msg":"Manager reconnect error","args":[{}]}
+{"level":"INFO","timestamp":"2025-08-21T13:04:03.515+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:03.516+0530","caller":"cctv-agent/main.go:260","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:03.516+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:03.516+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:03.516+0530","caller":"socketio/client.go:157","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:03.516+0530","caller":"cctv-agent/main.go:278","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:07.377+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:07.378+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054","path":"/socket.io"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:07.378+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:07.378+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T13:04:07.378+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:07.378+0530","caller":"socketio/client.go:66","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/socket.io","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:07.378+0530","caller":"socketio/client.go:143","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/socket.io"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:07.378+0530","caller":"cctv-agent/main.go:254","msg":"Application started successfully"}
+{"level":"ERROR","timestamp":"2025-08-21T13:04:07.383+0530","caller":"socketio/client.go:118","msg":"Socket.IO connect_error","args":[{"Message":"fetch read error","Description":null,"Type":"TransportError","Context":{}}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:04:07.383+0530","caller":"socketio/client.go:75","msg":"Manager error","args":[{"Message":"fetch read error","Description":null,"Type":"TransportError","Context":{}}]}
+{"level":"WARN","timestamp":"2025-08-21T13:04:08.384+0530","caller":"socketio/client.go:84","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T13:04:08.389+0530","caller":"socketio/client.go:118","msg":"Socket.IO connect_error","args":[{"Message":"fetch read error","Description":null,"Type":"TransportError","Context":{}}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:04:08.389+0530","caller":"socketio/client.go:75","msg":"Manager error","args":[{"Message":"fetch read error","Description":null,"Type":"TransportError","Context":{}}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:04:08.389+0530","caller":"socketio/client.go:87","msg":"Manager reconnect error","args":[{"Message":"fetch read error","Description":null,"Type":"TransportError","Context":{}}]}
+{"level":"WARN","timestamp":"2025-08-21T13:04:09.636+0530","caller":"socketio/client.go:84","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T13:04:09.645+0530","caller":"socketio/client.go:118","msg":"Socket.IO connect_error","args":[{"Message":"fetch read error","Description":null,"Type":"TransportError","Context":{}}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:04:09.645+0530","caller":"socketio/client.go:75","msg":"Manager error","args":[{"Message":"fetch read error","Description":null,"Type":"TransportError","Context":{}}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:04:09.645+0530","caller":"socketio/client.go:87","msg":"Manager reconnect error","args":[{"Message":"fetch read error","Description":null,"Type":"TransportError","Context":{}}]}
+{"level":"WARN","timestamp":"2025-08-21T13:04:14.286+0530","caller":"socketio/client.go:84","msg":"Manager reconnect attempt"}
+{"level":"WARN","timestamp":"2025-08-21T13:04:14.288+0530","caller":"socketio/client.go:81","msg":"Manager reconnected"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:14.289+0530","caller":"socketio/client.go:96","msg":"Connected to Socket.IO server"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:14.289+0530","caller":"cctv-agent/main.go:241","msg":"Socket.IO connected"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:14.289+0530","caller":"cctv-agent/main.go:224","msg":"Socket.IO welcome","data":[{"message":"Connected to custom Socket.IO server","socketId":"m-5aHHTrnNqo1P4mAAAc","timestamp":"2025-08-21T07:34:14.289Z"}]}
+{"level":"INFO","timestamp":"2025-08-21T13:04:14.928+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:14.928+0530","caller":"cctv-agent/main.go:260","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:14.928+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:14.928+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:14.928+0530","caller":"socketio/client.go:158","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:14.928+0530","caller":"cctv-agent/main.go:278","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:17.879+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:17.880+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054","path":"/socket.io"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:17.880+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:17.880+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T13:04:17.880+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:17.881+0530","caller":"socketio/client.go:66","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:18.887+0530","caller":"socketio/client.go:143","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:18.887+0530","caller":"cctv-agent/main.go:254","msg":"Application started successfully"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:26.588+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:26.588+0530","caller":"cctv-agent/main.go:260","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:26.588+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:26.588+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:26.588+0530","caller":"socketio/client.go:158","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:26.588+0530","caller":"cctv-agent/main.go:278","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:29.587+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:29.588+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054","path":"/socket.io"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:29.588+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:29.588+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T13:04:29.588+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:29.588+0530","caller":"socketio/client.go:66","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:29.588+0530","caller":"socketio/client.go:143","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:29.588+0530","caller":"cctv-agent/main.go:254","msg":"Application started successfully"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:32.941+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:32.941+0530","caller":"cctv-agent/main.go:260","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:32.941+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:32.941+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:32.941+0530","caller":"socketio/client.go:158","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T13:04:32.941+0530","caller":"cctv-agent/main.go:278","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T13:08:06.956+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T13:08:06.957+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054","path":"/socket.io"}
+{"level":"INFO","timestamp":"2025-08-21T13:08:06.958+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T13:08:06.958+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T13:08:06.958+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T13:08:06.958+0530","caller":"socketio/client.go:63","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T13:08:06.962+0530","caller":"socketio/client.go:140","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/"}
+{"level":"INFO","timestamp":"2025-08-21T13:08:06.962+0530","caller":"cctv-agent/main.go:254","msg":"Application started successfully"}
+{"level":"INFO","timestamp":"2025-08-21T13:08:06.963+0530","caller":"socketio/client.go:93","msg":"Connected to Socket.IO server"}
+{"level":"INFO","timestamp":"2025-08-21T13:08:06.963+0530","caller":"cctv-agent/main.go:241","msg":"Socket.IO connected"}
+{"level":"INFO","timestamp":"2025-08-21T13:08:06.963+0530","caller":"cctv-agent/main.go:224","msg":"Socket.IO welcome","data":[{"message":"Connected to custom Socket.IO server","socketId":"Vg_KNDkQXSQwQ7bdAAAe","timestamp":"2025-08-21T07:38:06.963Z"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:08:31.963+0530","caller":"socketio/client.go:75","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T13:08:56.967+0530","caller":"socketio/client.go:75","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T13:09:21.979+0530","caller":"socketio/client.go:75","msg":"Manager ping"}
+{"level":"DEBUG","timestamp":"2025-08-21T13:09:46.981+0530","caller":"socketio/client.go:75","msg":"Manager ping"}
+{"level":"INFO","timestamp":"2025-08-21T13:09:57.343+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-21T13:09:57.343+0530","caller":"cctv-agent/main.go:260","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-21T13:09:57.343+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-21T13:09:57.343+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-21T13:09:57.343+0530","caller":"socketio/client.go:155","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-21T13:09:57.343+0530","caller":"cctv-agent/main.go:278","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-21T13:10:01.894+0530","caller":"cctv-agent/main.go:172","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-21T13:10:01.895+0530","caller":"cctv-agent/main.go:182","msg":"Socket.IO URL configured","url":"ws://localhost:9054","path":"/socket.io"}
+{"level":"INFO","timestamp":"2025-08-21T13:10:01.895+0530","caller":"cctv-agent/main.go:194","msg":"Starting application components"}
+{"level":"INFO","timestamp":"2025-08-21T13:10:01.895+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-21T13:10:01.895+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-21T13:10:01.895+0530","caller":"socketio/client.go:63","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T13:10:01.903+0530","caller":"socketio/client.go:141","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/"}
+{"level":"INFO","timestamp":"2025-08-21T13:10:01.903+0530","caller":"cctv-agent/main.go:254","msg":"Application started successfully"}
+{"level":"INFO","timestamp":"2025-08-21T13:10:01.904+0530","caller":"cctv-agent/main.go:224","msg":"Socket.IO welcome","data":[{"message":"Connected to custom Socket.IO server","socketId":"07OLsEtb-U-nFkO9AAAg","timestamp":"2025-08-21T07:40:01.904Z"}]}
+{"level":"INFO","timestamp":"2025-08-21T13:10:01.904+0530","caller":"socketio/client.go:94","msg":"Connected to Socket.IO server"}
+{"level":"INFO","timestamp":"2025-08-21T13:10:01.904+0530","caller":"cctv-agent/main.go:241","msg":"Socket.IO connected"}
+{"level":"DEBUG","timestamp":"2025-08-21T13:10:26.904+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"WARN","timestamp":"2025-08-21T13:10:26.922+0530","caller":"socketio/client.go:105","msg":"Disconnected from Socket.IO server"}
+{"level":"WARN","timestamp":"2025-08-21T13:10:26.922+0530","caller":"cctv-agent/main.go:246","msg":"Socket.IO disconnected"}
+{"level":"WARN","timestamp":"2025-08-21T13:10:27.923+0530","caller":"socketio/client.go:82","msg":"Manager reconnect attempt"}
+{"level":"INFO","timestamp":"2025-08-21T13:10:31.923+0530","caller":"socketio/client.go:223","msg":"Attempting to reconnect to Socket.IO server"}
+{"level":"INFO","timestamp":"2025-08-21T13:10:31.923+0530","caller":"socketio/client.go:63","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T13:10:31.924+0530","caller":"socketio/client.go:141","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/"}
+{"level":"ERROR","timestamp":"2025-08-21T13:10:47.926+0530","caller":"socketio/client.go:116","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:10:47.926+0530","caller":"socketio/client.go:72","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:10:47.926+0530","caller":"socketio/client.go:85","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T13:10:50.865+0530","caller":"socketio/client.go:82","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T13:10:51.925+0530","caller":"socketio/client.go:116","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:10:51.925+0530","caller":"socketio/client.go:72","msg":"Manager error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T13:10:52.926+0530","caller":"socketio/client.go:82","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T13:11:10.867+0530","caller":"socketio/client.go:116","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:11:10.867+0530","caller":"socketio/client.go:72","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:11:10.867+0530","caller":"socketio/client.go:85","msg":"Manager reconnect error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:11:12.930+0530","caller":"socketio/client.go:116","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:11:12.930+0530","caller":"socketio/client.go:72","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:11:12.930+0530","caller":"socketio/client.go:85","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T13:11:13.469+0530","caller":"socketio/client.go:82","msg":"Manager reconnect attempt"}
+{"level":"WARN","timestamp":"2025-08-21T13:11:13.474+0530","caller":"socketio/client.go:79","msg":"Manager reconnected"}
+{"level":"INFO","timestamp":"2025-08-21T13:11:13.476+0530","caller":"socketio/client.go:94","msg":"Connected to Socket.IO server"}
+{"level":"INFO","timestamp":"2025-08-21T13:11:13.476+0530","caller":"cctv-agent/main.go:241","msg":"Socket.IO connected"}
+{"level":"INFO","timestamp":"2025-08-21T13:11:13.476+0530","caller":"cctv-agent/main.go:224","msg":"Socket.IO welcome","data":[{"message":"Connected to custom Socket.IO server","socketId":"8OECncGpZ4N5heBAAAAB","timestamp":"2025-08-21T07:41:13.476Z"}]}
+{"level":"WARN","timestamp":"2025-08-21T13:11:14.533+0530","caller":"socketio/client.go:82","msg":"Manager reconnect attempt"}
+{"level":"WARN","timestamp":"2025-08-21T13:11:14.535+0530","caller":"socketio/client.go:79","msg":"Manager reconnected"}
+{"level":"INFO","timestamp":"2025-08-21T13:11:14.536+0530","caller":"socketio/client.go:94","msg":"Connected to Socket.IO server"}
+{"level":"INFO","timestamp":"2025-08-21T13:11:14.536+0530","caller":"cctv-agent/main.go:241","msg":"Socket.IO connected"}
+{"level":"INFO","timestamp":"2025-08-21T13:11:14.536+0530","caller":"cctv-agent/main.go:224","msg":"Socket.IO welcome","data":[{"message":"Connected to custom Socket.IO server","socketId":"wMYuGh-j1H17tgVIAAAD","timestamp":"2025-08-21T07:41:14.536Z"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:11:38.475+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"WARN","timestamp":"2025-08-21T13:11:38.480+0530","caller":"socketio/client.go:105","msg":"Disconnected from Socket.IO server"}
+{"level":"WARN","timestamp":"2025-08-21T13:11:38.480+0530","caller":"socketio/client.go:105","msg":"Disconnected from Socket.IO server"}
+{"level":"WARN","timestamp":"2025-08-21T13:11:38.480+0530","caller":"cctv-agent/main.go:246","msg":"Socket.IO disconnected"}
+{"level":"WARN","timestamp":"2025-08-21T13:11:38.480+0530","caller":"cctv-agent/main.go:246","msg":"Socket.IO disconnected"}
+{"level":"WARN","timestamp":"2025-08-21T13:11:39.480+0530","caller":"socketio/client.go:82","msg":"Manager reconnect attempt"}
+{"level":"WARN","timestamp":"2025-08-21T13:11:39.480+0530","caller":"socketio/client.go:82","msg":"Manager reconnect attempt"}
+{"level":"INFO","timestamp":"2025-08-21T13:11:43.481+0530","caller":"socketio/client.go:223","msg":"Attempting to reconnect to Socket.IO server"}
+{"level":"INFO","timestamp":"2025-08-21T13:11:43.481+0530","caller":"socketio/client.go:63","msg":"Connecting to Socket.IO server","base":"http://localhost:9054","ns":"/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-21T13:11:43.484+0530","caller":"socketio/client.go:141","msg":"Socket.IO client initialized","base":"http://localhost:9054","ns":"/"}
+{"level":"ERROR","timestamp":"2025-08-21T13:11:59.482+0530","caller":"socketio/client.go:116","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:11:59.482+0530","caller":"socketio/client.go:72","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:11:59.482+0530","caller":"socketio/client.go:85","msg":"Manager reconnect error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:11:59.482+0530","caller":"socketio/client.go:116","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:11:59.483+0530","caller":"socketio/client.go:72","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:11:59.483+0530","caller":"socketio/client.go:85","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T13:12:01.062+0530","caller":"socketio/client.go:82","msg":"Manager reconnect attempt"}
+{"level":"WARN","timestamp":"2025-08-21T13:12:01.480+0530","caller":"socketio/client.go:82","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T13:12:03.485+0530","caller":"socketio/client.go:116","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:12:03.486+0530","caller":"socketio/client.go:72","msg":"Manager error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T13:12:04.828+0530","caller":"socketio/client.go:82","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T13:12:21.064+0530","caller":"socketio/client.go:116","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:12:21.064+0530","caller":"socketio/client.go:72","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:12:21.064+0530","caller":"socketio/client.go:85","msg":"Manager reconnect error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:12:21.484+0530","caller":"socketio/client.go:116","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:12:21.484+0530","caller":"socketio/client.go:72","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:12:21.484+0530","caller":"socketio/client.go:85","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T13:12:24.628+0530","caller":"socketio/client.go:82","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T13:12:24.829+0530","caller":"socketio/client.go:116","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:12:24.829+0530","caller":"socketio/client.go:72","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:12:24.829+0530","caller":"socketio/client.go:85","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T13:12:25.356+0530","caller":"socketio/client.go:82","msg":"Manager reconnect attempt"}
+{"level":"WARN","timestamp":"2025-08-21T13:12:26.885+0530","caller":"socketio/client.go:82","msg":"Manager reconnect attempt"}
+{"level":"ERROR","timestamp":"2025-08-21T13:12:44.630+0530","caller":"socketio/client.go:116","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:12:44.630+0530","caller":"socketio/client.go:72","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:12:44.630+0530","caller":"socketio/client.go:85","msg":"Manager reconnect error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:12:45.358+0530","caller":"socketio/client.go:116","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:12:45.358+0530","caller":"socketio/client.go:72","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:12:45.358+0530","caller":"socketio/client.go:85","msg":"Manager reconnect error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:12:46.887+0530","caller":"socketio/client.go:116","msg":"Socket.IO connect_error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:12:46.887+0530","caller":"socketio/client.go:72","msg":"Manager error","args":[{}]}
+{"level":"ERROR","timestamp":"2025-08-21T13:12:46.887+0530","caller":"socketio/client.go:85","msg":"Manager reconnect error","args":[{}]}
+{"level":"WARN","timestamp":"2025-08-21T13:12:49.361+0530","caller":"socketio/client.go:82","msg":"Manager reconnect attempt"}
+{"level":"WARN","timestamp":"2025-08-21T13:12:49.366+0530","caller":"socketio/client.go:79","msg":"Manager reconnected"}
+{"level":"INFO","timestamp":"2025-08-21T13:12:49.368+0530","caller":"socketio/client.go:94","msg":"Connected to Socket.IO server"}
+{"level":"INFO","timestamp":"2025-08-21T13:12:49.368+0530","caller":"cctv-agent/main.go:241","msg":"Socket.IO connected"}
+{"level":"INFO","timestamp":"2025-08-21T13:12:49.368+0530","caller":"cctv-agent/main.go:224","msg":"Socket.IO welcome","data":[{"message":"Connected to custom Socket.IO server","socketId":"r9FTJoCi7Q3pZPuSAAAB","timestamp":"2025-08-21T07:42:49.368Z"}]}
+{"level":"WARN","timestamp":"2025-08-21T13:12:50.359+0530","caller":"socketio/client.go:82","msg":"Manager reconnect attempt"}
+{"level":"WARN","timestamp":"2025-08-21T13:12:50.361+0530","caller":"socketio/client.go:79","msg":"Manager reconnected"}
+{"level":"INFO","timestamp":"2025-08-21T13:12:50.362+0530","caller":"cctv-agent/main.go:224","msg":"Socket.IO welcome","data":[{"message":"Connected to custom Socket.IO server","socketId":"LoCr_zCSwy6sTOufAAAD","timestamp":"2025-08-21T07:42:50.362Z"}]}
+{"level":"INFO","timestamp":"2025-08-21T13:12:50.362+0530","caller":"socketio/client.go:94","msg":"Connected to Socket.IO server"}
+{"level":"INFO","timestamp":"2025-08-21T13:12:50.362+0530","caller":"cctv-agent/main.go:241","msg":"Socket.IO connected"}
+{"level":"WARN","timestamp":"2025-08-21T13:12:51.888+0530","caller":"socketio/client.go:82","msg":"Manager reconnect attempt"}
+{"level":"WARN","timestamp":"2025-08-21T13:12:51.891+0530","caller":"socketio/client.go:79","msg":"Manager reconnected"}
+{"level":"INFO","timestamp":"2025-08-21T13:12:51.891+0530","caller":"socketio/client.go:94","msg":"Connected to Socket.IO server"}
+{"level":"INFO","timestamp":"2025-08-21T13:12:51.891+0530","caller":"cctv-agent/main.go:241","msg":"Socket.IO connected"}
+{"level":"INFO","timestamp":"2025-08-21T13:12:51.891+0530","caller":"cctv-agent/main.go:224","msg":"Socket.IO welcome","data":[{"message":"Connected to custom Socket.IO server","socketId":"gEStSxfuVK2fGuXQAAAF","timestamp":"2025-08-21T07:42:51.891Z"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:13:14.367+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:13:14.368+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:43:14.368Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:13:15.362+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:13:15.363+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:43:15.363Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:13:16.891+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:13:16.892+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:43:16.892Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:13:39.370+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:13:39.372+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:43:39.372Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:13:40.364+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:13:40.366+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:43:40.365Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:13:41.896+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:13:41.898+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:43:41.898Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:14:04.373+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:14:04.376+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:44:04.376Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:14:05.366+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:14:05.369+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:44:05.368Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:14:06.899+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:14:06.901+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:44:06.901Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:14:29.377+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:14:29.379+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:44:29.378Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:14:30.369+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:14:30.371+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:44:30.371Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:14:31.903+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:14:31.905+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:44:31.904Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:14:54.379+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:14:54.380+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:44:54.380Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:14:55.372+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:14:55.374+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:44:55.374Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:14:56.905+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:14:56.907+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:44:56.906Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:15:19.382+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:15:19.384+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:45:19.383Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:15:20.376+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:15:20.377+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:45:20.377Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:15:21.908+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:15:21.911+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:45:21.910Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:15:44.385+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:15:44.387+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:45:44.386Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:15:45.377+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:15:45.381+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:45:45.379Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:15:46.912+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:15:46.913+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:45:46.913Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:16:09.390+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:16:09.393+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:46:09.392Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:16:10.379+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:16:10.382+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:46:10.381Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:16:11.914+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:16:11.914+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:46:11.914Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:16:34.394+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:16:34.397+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:46:34.395Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:16:35.382+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:16:35.386+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:46:35.383Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:16:36.916+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:16:36.918+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:46:36.917Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:16:59.396+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:16:59.396+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:46:59.396Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:17:00.385+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:17:00.390+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:47:00.388Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:17:01.918+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:17:01.919+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:47:01.919Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:17:24.400+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:17:24.403+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:47:24.402Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:17:25.389+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:17:25.391+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:47:25.390Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:17:26.920+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:17:26.922+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:47:26.921Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:17:49.403+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:17:49.406+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:47:49.405Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:17:50.392+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:17:50.395+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:47:50.394Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:17:51.922+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:17:51.923+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:47:51.923Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:18:14.409+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:18:14.413+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:48:14.412Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:18:15.395+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:18:15.399+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:48:15.399Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:18:16.925+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:18:16.928+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:48:16.928Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:18:39.411+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:18:39.412+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:48:39.412Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:18:40.401+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:18:40.402+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:48:40.401Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:18:41.930+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:18:41.933+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:48:41.933Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:19:04.447+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:19:04.448+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:49:04.447Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:19:05.404+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:19:05.405+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:49:05.404Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:19:06.938+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:19:06.945+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:49:06.939Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:19:29.454+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:19:29.457+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:49:29.456Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:19:30.408+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:19:30.410+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:49:30.409Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:19:31.942+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:19:31.942+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:49:31.942Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:19:54.457+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:19:54.458+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:49:54.458Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:19:55.412+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:19:55.414+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:49:55.413Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:19:56.947+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:19:56.949+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:49:56.948Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:20:19.461+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:20:19.465+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:50:19.464Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:20:20.419+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:20:20.420+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:50:20.420Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:20:21.955+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:20:21.956+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:50:21.956Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:20:44.464+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:20:44.464+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:50:44.464Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:20:45.422+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:20:45.423+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:50:45.422Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:20:46.958+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:20:46.959+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:50:46.959Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:21:09.465+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:21:09.467+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:51:09.467Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:21:10.425+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:21:10.427+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:51:10.427Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:21:11.961+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:21:11.963+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:51:11.962Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:21:34.468+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:21:34.470+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:51:34.469Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:21:35.429+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:21:35.431+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:51:35.430Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:21:36.963+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:21:36.968+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:51:36.964Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:21:59.470+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:21:59.474+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:51:59.473Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:22:00.431+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:22:00.435+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:52:00.434Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:22:01.967+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:22:01.976+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:52:01.975Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:22:24.478+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:22:24.482+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:52:24.482Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:22:25.436+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:22:25.438+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:52:25.437Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:22:26.976+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:22:26.977+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:52:26.977Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:22:49.483+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:22:49.484+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:52:49.483Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:22:50.438+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:22:50.439+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:52:50.439Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:22:51.978+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:22:51.978+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:52:51.978Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:23:14.485+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:23:14.485+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:53:14.485Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:23:15.439+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:23:15.440+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:53:15.440Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:23:16.978+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:23:16.979+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:53:16.979Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:23:39.486+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:23:39.488+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:53:39.487Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:23:40.441+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:23:40.442+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:53:40.442Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:23:41.981+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:23:41.983+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:53:41.983Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:24:04.491+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:24:04.494+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:54:04.493Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:24:05.443+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:24:05.444+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:54:05.444Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:24:06.983+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:24:06.984+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:54:06.983Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:24:29.494+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:24:29.494+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:54:29.494Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:24:30.445+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:24:30.446+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:54:30.446Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:24:31.984+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:24:31.985+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:54:31.985Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:24:54.495+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:24:54.496+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:54:54.496Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:24:55.447+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:24:55.448+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:54:55.448Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:24:56.985+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:24:56.986+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:54:56.985Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:25:19.497+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:25:19.497+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:55:19.497Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:25:20.448+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:25:20.448+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:55:20.448Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:25:21.986+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:25:21.987+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:55:21.987Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:25:44.499+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:25:44.500+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:55:44.499Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:25:45.448+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:25:45.449+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:55:45.449Z","type":"pong"}]}
+{"level":"DEBUG","timestamp":"2025-08-21T13:25:46.987+0530","caller":"socketio/client.go:75","msg":"Manager ping","data":null}
+{"level":"INFO","timestamp":"2025-08-21T13:25:46.988+0530","caller":"cctv-agent/main.go:218","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-21T07:55:46.988Z","type":"pong"}]}
