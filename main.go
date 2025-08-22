@@ -117,9 +117,9 @@ func NewApplication(configPath string) *Application {
 				Level:         "debug",
 				ConsoleOutput: true,
 				ConsoleFormat: "text",
-				FileOutput:    true,
+				FileOutput:    false, // Changed from true
 				FileFormat:    "json",
-				LogDir:        "/opt/grw/cctv-agent/logs",
+				LogDir:        "./logs",
 				MaxSize:       100,
 				MaxBackups:    3,
 				MaxAge:        7,
@@ -133,7 +133,28 @@ func NewApplication(configPath string) *Application {
 				PingInterval:   30 * time.Second,
 				TLS:            false,
 			},
-			Cameras: []config.CameraConfig{},
+			Cameras: []config.CameraConfig{
+				{
+					ID:         "dummy1",
+					Name:       "Dummy Camera 1",
+					RTSPUrl:    "rtsp://dummy:dummy@192.168.1.101:554/stream1",
+					Enabled:    true,
+					PTZEnabled: true,
+					Username:   "dummy",
+					Password:   "dummy",
+					ONVIFPort:  80,
+				},
+				{
+					ID:         "dummy2",
+					Name:       "Dummy Camera 2",
+					RTSPUrl:    "rtsp://test:test@192.168.1.102:554/stream1",
+					Enabled:    true,
+					PTZEnabled: false,
+					Username:   "test",
+					Password:   "test",
+					ONVIFPort:  80,
+				},
+			},
 			FFmpeg: config.FFmpegConfig{
 				Preset:       "ultrafast",
 				Tune:         "zerolatency",
@@ -226,10 +247,17 @@ func (app *Application) Start() error {
 		return nil
 	})
 
-	app.sioClient.RegisterEventHandler("command", func(data json.RawMessage) error {
+	app.sioClient.RegisterEventHandler("custom_response", func(data json.RawMessage) error {
 		return app.handleCommand(data)
 	})
 
+	app.sioClient.RegisterEventHandler("camera_control_response", func(data json.RawMessage) error {
+		app.logger.Info("Socket.IO camera_control_response", "pong", data)
+
+		return app.handleCameraControlResponse(data)
+	})
+
+	// Connect to Socket.IO server
 	// Connect to Socket.IO server
 	if err := app.sioClient.Connect(); err != nil {
 		app.logger.Error("Failed to connect to Socket.IO server", "error", err)
@@ -292,9 +320,43 @@ func (app *Application) processCommands() {
 
 // handleCommand handles a single command
 func (app *Application) handleCommand(cmd json.RawMessage) error {
-	app.logger.Info("Processing command")
+	app.logger.Info("Processing custom_response command")
 
 	// TODO: Implement command handling
+	return nil
+}
+
+func (app *Application) handleCameraControlResponse(data json.RawMessage) error {
+	app.logger.Info("Processing camera_control_response", "data", string(data))
+
+	// // Parse the incoming data
+	// var response map[string]interface{}
+	// if err := json.Unmarshal(data, &response); err != nil {
+	//     app.logger.Error("Failed to parse camera_control_response", "error", err)
+	//     return err
+	// }
+
+	// // Extract camera ID if present
+	// cameraID, _ := response["camera_id"].(string)
+	// command, _ := response["command"].(string)
+
+	// app.logger.Info("Camera control response received",
+	//     "camera_id", cameraID,
+	//     "command", command,
+	//     "response", response)
+
+	// // Handle different types of camera control responses
+	// switch command {
+	// case "ptz":
+	//     return app.handlePTZResponse(cameraID, response)
+	// case "stream":
+	//     return app.handleStreamResponse(cameraID, response)
+	// case "preset":
+	//     return app.handlePresetResponse(cameraID, response)
+	// default:
+	//     app.logger.Warn("Unknown camera control command", "command", command)
+	// }
+
 	return nil
 }
 
@@ -317,7 +379,7 @@ func (app *Application) restartComponents() {
 		app.logger.Warn("Socket.IO disconnected")
 	})
 
-	app.sioClient.RegisterEventHandler("command", func(data json.RawMessage) error {
+	app.sioClient.RegisterEventHandler("custom_response", func(data json.RawMessage) error {
 		return app.handleCommand(data)
 	})
 
