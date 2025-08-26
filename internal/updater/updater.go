@@ -1,8 +1,11 @@
 package updater
 
 import (
+	"context"
 	"crypto/sha256"
 	"encoding/hex"
+	"encoding/json"
+	"errors"
 	"fmt"
 	"io"
 	"net/http"
@@ -10,9 +13,13 @@ import (
 	"os/exec"
 	"path/filepath"
 	"runtime"
+	"strings"
+	"sync"
 	"time"
 
+	"github.com/cctv-agent/config"
 	"github.com/cctv-agent/internal/logger"
+	"github.com/cctv-agent/internal/socketio"
 	"github.com/hashicorp/go-version"
 )
 
@@ -21,6 +28,284 @@ type Updater struct {
 	logger         logger.Logger
 	currentVersion string
 	binaryPath     string
+	opts           config.UpdaterConfig
+	sioClient      *socketio.Client
+	responseMap    map[string]chan *UpdateCheckResponse
+	responseMu     sync.RWMutex
+}
+
+// RunPeriodic starts a background loop to periodically check and apply updates based on options
+func (u *Updater) RunPeriodic(ctx context.Context) {
+	if !u.opts.Enabled {
+		u.logger.Info("Updater disabled; not starting periodic loop")
+		return
+	}
+	// small jitter to spread load
+	jitter := time.Duration(1+time.Now().UnixNano()%10) * time.Second
+	timer := time.NewTimer(jitter)
+	defer timer.Stop()
+	for {
+		select {
+		case <-ctx.Done():
+			return
+		case <-timer.C:
+			if err := u.checkAndMaybeUpdate(ctx); err != nil {
+				u.logger.Error("Update cycle error", "error", err)
+			}
+			interval := u.opts.Interval
+			if interval <= 0 {
+				interval = 2 * time.Hour
+			}
+			j := time.Duration(float64(interval) * 0.1)
+			next := interval
+			if j > 0 {
+				next += time.Duration(time.Now().UnixNano() % int64(j))
+			}
+			timer.Reset(next)
+		}
+	}
+}
+
+func (u *Updater) checkAndMaybeUpdate(ctx context.Context) error {
+	m, err := u.fetchManifest(ctx)
+	if err != nil {
+		if u.opts.URL == "" { // no fallback URL
+			return err
+		}
+		// fabricate manifest from direct URL
+		m = &Manifest{Version: u.currentVersion, URL: u.opts.URL, OS: runtime.GOOS, Arch: runtime.GOARCH, Channel: u.opts.Channel}
+	}
+
+	// channel filter
+	if m.Channel != "" && u.opts.Channel != "" && !strings.EqualFold(m.Channel, u.opts.Channel) {
+		u.logger.Info("Skipping manifest due to channel mismatch", "manifest", m.Channel, "desired", u.opts.Channel)
+		return nil
+	}
+	// os/arch filter
+	if (m.OS != "" && m.OS != runtime.GOOS) || (m.Arch != "" && m.Arch != runtime.GOARCH) {
+		u.logger.Warn("Skipping manifest due to os/arch mismatch", "os", m.OS, "arch", m.Arch)
+		return nil
+	}
+
+	need, err := u.needUpdate(m.Version)
+	if err != nil {
+		return err
+	}
+	if !need {
+		u.logger.Info("No update available", "current", u.currentVersion)
+		return nil
+	}
+
+	// download to updates dir
+	updatesDir := filepath.Join(u.opts.BaseDir, "updates")
+	if err := os.MkdirAll(updatesDir, 0o755); err != nil {
+		return fmt.Errorf("mkdir updates: %w", err)
+	}
+	staging := filepath.Join(updatesDir, m.Version+".partial")
+	final := filepath.Join(updatesDir, m.Version)
+	if err := u.downloadWithResume(ctx, m.URL, staging); err != nil {
+		return fmt.Errorf("download failed: %w", err)
+	}
+	if err := os.Rename(staging, final); err != nil {
+		return fmt.Errorf("finalize download: %w", err)
+	}
+	if m.SHA256 != "" {
+		if err := u.verifyChecksum(final, m.SHA256); err != nil {
+			return err
+		}
+	}
+	if err := u.installRelease(final, m.Version); err != nil {
+		return fmt.Errorf("install release: %w", err)
+	}
+	u.scheduleRestart()
+	return nil
+}
+
+func (u *Updater) fetchManifest(ctx context.Context) (*Manifest, error) {
+	// Use SocketIO client if available, otherwise fall back to HTTP
+	if u.sioClient != nil && u.sioClient.IsConnected() {
+		return u.fetchManifestViaSocketIO(ctx)
+	}
+
+	return nil, errors.New("SocketIO client error")
+}
+
+// fetchManifestViaSocketIO fetches update information via SocketIO
+func (u *Updater) fetchManifestViaSocketIO(ctx context.Context) (*Manifest, error) {
+	u.logger.Info("Checking for updates via SocketIO", "current_version", u.currentVersion)
+
+	// Create a unique request ID and response channel
+	requestID := fmt.Sprintf("update_check_%d", time.Now().UnixNano())
+	responseCh := make(chan *UpdateCheckResponse, 1)
+
+	u.responseMu.Lock()
+	u.responseMap[requestID] = responseCh
+	u.responseMu.Unlock()
+
+	// Clean up on function exit
+	defer func() {
+		u.responseMu.Lock()
+		delete(u.responseMap, requestID)
+		u.responseMu.Unlock()
+		close(responseCh)
+	}()
+
+	// Send update check request
+	request := UpdateCheckRequest{
+		CurrentVersion: u.currentVersion,
+	}
+
+	if err := u.sioClient.Emit("is_update_available", request); err != nil {
+		return nil, fmt.Errorf("failed to send update check request: %w", err)
+	}
+
+	// Wait for response with timeout
+	timeout := 30 * time.Second
+	select {
+	case response := <-responseCh:
+		if response == nil {
+			return nil, errors.New("received nil update check response")
+		}
+
+		if !response.UpdateAvailable {
+			u.logger.Info("No update available via SocketIO")
+			return nil, errors.New("no update available")
+		}
+
+		// Convert response to Manifest format
+		manifest := &Manifest{
+			Version: response.NewVersion,
+			URL:     response.DownloadURL,
+			SHA256:  response.Checksum,
+			OS:      runtime.GOOS,
+			Arch:    runtime.GOARCH,
+			Channel: u.opts.Channel,
+		}
+
+		u.logger.Info("Update available via SocketIO",
+			"current_version", u.currentVersion,
+			"new_version", response.NewVersion)
+
+		return manifest, nil
+
+	case <-ctx.Done():
+		return nil, ctx.Err()
+
+	case <-time.After(timeout):
+		return nil, errors.New("timeout waiting for update check response")
+	}
+}
+
+func (u *Updater) needUpdate(avail string) (bool, error) {
+	if avail == "" {
+		return false, nil
+	}
+	cur, err := version.NewVersion(u.currentVersion)
+	if err != nil {
+		return false, fmt.Errorf("parse current version: %w", err)
+	}
+	av, err := version.NewVersion(avail)
+	if err != nil {
+		return false, fmt.Errorf("parse available version: %w", err)
+	}
+	if av.GreaterThan(cur) {
+		return true, nil
+	}
+	if u.opts.AllowDowngrade && av.LessThan(cur) {
+		return true, nil
+	}
+	return false, nil
+}
+
+func (u *Updater) downloadWithResume(ctx context.Context, url, dest string) error {
+	// simple full download (resume can be added later)
+	if err := os.MkdirAll(filepath.Dir(dest), 0o755); err != nil {
+		return err
+	}
+	f, err := os.Create(dest)
+	if err != nil {
+		return err
+	}
+	defer f.Close()
+	req, err := http.NewRequestWithContext(ctx, http.MethodGet, url, nil)
+	if err != nil {
+		return err
+	}
+	cli := &http.Client{Timeout: 10 * time.Minute}
+	resp, err := cli.Do(req)
+	if err != nil {
+		return err
+	}
+	defer resp.Body.Close()
+	if resp.StatusCode != http.StatusOK {
+		return fmt.Errorf("download http %d", resp.StatusCode)
+	}
+	if _, err := io.Copy(f, resp.Body); err != nil {
+		return err
+	}
+	if err := f.Sync(); err != nil {
+		return err
+	}
+	return os.Chmod(dest, 0o755)
+}
+
+func (u *Updater) installRelease(artifactPath, versionStr string) error {
+	base := u.opts.BaseDir
+	releases := filepath.Join(base, "releases", versionStr)
+	if err := os.MkdirAll(releases, 0o755); err != nil {
+		return err
+	}
+	targetBin := filepath.Join(releases, "cctv-agent")
+	if err := copyFile(artifactPath, targetBin); err != nil {
+		return err
+	}
+	if err := os.Chmod(targetBin, 0o755); err != nil {
+		return err
+	}
+	current := filepath.Join(base, "current")
+	tmp := filepath.Join(base, ".current.tmp")
+	_ = os.Remove(tmp)
+	if err := os.Symlink(targetBin, tmp); err != nil {
+		return fmt.Errorf("create tmp symlink: %w", err)
+	}
+	if err := os.Rename(tmp, current); err != nil {
+		_ = os.Remove(tmp)
+		return fmt.Errorf("rename symlink: %w", err)
+	}
+	u.pruneOldReleases(filepath.Join(base, "releases"))
+	return nil
+}
+
+func copyFile(src, dst string) error {
+	in, err := os.Open(src)
+	if err != nil {
+		return err
+	}
+	defer in.Close()
+	out, err := os.Create(dst)
+	if err != nil {
+		return err
+	}
+	defer func() { _ = out.Close() }()
+	if _, err := io.Copy(out, in); err != nil {
+		return err
+	}
+	return out.Sync()
+}
+
+func (u *Updater) pruneOldReleases(dir string) {
+	entries, err := os.ReadDir(dir)
+	if err != nil {
+		return
+	}
+	if len(entries) <= u.opts.KeepReleases {
+		return
+	}
+	// naive pruning: remove oldest lexicographically
+	toDelete := len(entries) - u.opts.KeepReleases
+	for i := 0; i < toDelete; i++ {
+		_ = os.RemoveAll(filepath.Join(dir, entries[i].Name()))
+	}
 }
 
 // UpdateInfo contains update information
@@ -32,6 +317,19 @@ type UpdateInfo struct {
 	Force        bool   `json:"force"`
 }
 
+// UpdateCheckRequest represents the request to check for updates via SocketIO
+type UpdateCheckRequest struct {
+	CurrentVersion string `json:"current_version"`
+}
+
+// UpdateCheckResponse represents the response from update check via SocketIO
+type UpdateCheckResponse struct {
+	NewVersion      string `json:"newVersion"`
+	UpdateAvailable bool   `json:"updateAvailable"`
+	DownloadURL     string `json:"downloadURL,omitempty"`
+	Checksum        string `json:"checksum,omitempty"`
+}
+
 // NewUpdater creates a new updater instance
 func NewUpdater(log logger.Logger, currentVersion string) *Updater {
 	binaryPath, _ := os.Executable()
@@ -40,7 +338,87 @@ func NewUpdater(log logger.Logger, currentVersion string) *Updater {
 		logger:         log,
 		currentVersion: currentVersion,
 		binaryPath:     binaryPath,
+		responseMap:    make(map[string]chan *UpdateCheckResponse),
+		opts: config.UpdaterConfig{ // sensible defaults; can be overridden via ApplyConfig
+			Enabled:        true,
+			BaseDir:        "/opt/cctv-agent",
+			ServiceName:    "cctv-agent",
+			Interval:       2 * time.Hour,
+			KeepReleases:   3,
+			HealthTimeout:  30 * time.Second,
+			Channel:        "stable",
+			AllowDowngrade: false,
+		},
 	}
+}
+
+// ApplyConfig sets runtime options from config.UpdaterConfig, filling in sane fallbacks
+func (u *Updater) ApplyConfig(o config.UpdaterConfig) {
+	if o.BaseDir == "" {
+		o.BaseDir = u.opts.BaseDir
+	}
+	if o.ServiceName == "" {
+		o.ServiceName = u.opts.ServiceName
+	}
+	if o.Interval == 0 {
+		o.Interval = u.opts.Interval
+	}
+	if o.KeepReleases <= 0 {
+		o.KeepReleases = u.opts.KeepReleases
+	}
+	if o.HealthTimeout == 0 {
+		o.HealthTimeout = u.opts.HealthTimeout
+	}
+	if o.Channel == "" {
+		o.Channel = u.opts.Channel
+	}
+	u.opts = o
+}
+
+// SetSocketIOClient sets the SocketIO client for update checks
+func (u *Updater) SetSocketIOClient(client *socketio.Client) {
+	u.sioClient = client
+	// Register handler for update check responses
+	if client != nil {
+		client.RegisterEventHandler("update_check_response", u.handleUpdateCheckResponse)
+	}
+}
+
+// handleUpdateCheckResponse handles update check responses from SocketIO
+func (u *Updater) handleUpdateCheckResponse(data json.RawMessage) error {
+	var response UpdateCheckResponse
+	if err := json.Unmarshal(data, &response); err != nil {
+		u.logger.Error("Failed to unmarshal update check response", "error", err)
+		return err
+	}
+
+	// Find the waiting channel and send the response
+	u.responseMu.Lock()
+	defer u.responseMu.Unlock()
+
+	for key, ch := range u.responseMap {
+		select {
+		case ch <- &response:
+			delete(u.responseMap, key)
+			return nil
+		default:
+			// Channel is not ready, continue to next
+		}
+	}
+
+	u.logger.Warn("Received update check response but no waiting channel found")
+	return nil
+}
+
+// Manifest describes update metadata hosted remotely
+type Manifest struct {
+	Version string `json:"version"`
+	URL     string `json:"url"`
+	SHA256  string `json:"sha256"`
+	Size    int64  `json:"size"`
+	OS      string `json:"os"`
+	Arch    string `json:"arch"`
+	Channel string `json:"channel"`
 }
 
 // CheckForUpdate checks if an update is available
@@ -281,14 +659,18 @@ func (u *Updater) restoreBinary(backupPath string) error {
 
 // scheduleRestart schedules a restart of the service
 func (u *Updater) scheduleRestart() {
-	u.logger.Info("Scheduling restart in 5 seconds")
+	u.logger.Info("Scheduling service restart in 5 seconds", "service", u.opts.ServiceName)
 
 	go func() {
 		time.Sleep(5 * time.Second)
 
 		// Try to restart via systemd
 		if runtime.GOOS == "linux" {
-			cmd := exec.Command("systemctl", "restart", "cctv-agent")
+			svc := u.opts.ServiceName
+			if svc == "" {
+				svc = "cctv-agent"
+			}
+			cmd := exec.Command("systemctl", "restart", svc)
 			if err := cmd.Run(); err != nil {
 				u.logger.Error("Failed to restart via systemd", "error", err)
 				// Fall back to exit
@@ -301,6 +683,12 @@ func (u *Updater) scheduleRestart() {
 	}()
 }
 
+// HandleStartup should be called on process start to finalize pending updates
+func (u *Updater) HandleStartup() {
+	// For now, just log successful start; further health checks can be added
+	u.logger.Info("Updater startup check complete", "version", u.currentVersion)
+}
+
 // GetCurrentVersion returns the current version
 func (u *Updater) GetCurrentVersion() string {
 	return u.currentVersion
@@ -309,4 +697,9 @@ func (u *Updater) GetCurrentVersion() string {
 // SetBinaryPath sets the binary path (for testing)
 func (u *Updater) SetBinaryPath(path string) {
 	u.binaryPath = path
+}
+
+// GetSocketIOClient returns the SocketIO client
+func (u *Updater) GetSocketIOClient() *socketio.Client {
+	return u.sioClient
 }

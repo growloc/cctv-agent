@@ -7,7 +7,7 @@ toolchain go1.24.2
 require (
 	github.com/hashicorp/go-version v1.6.0
 	github.com/shirou/gopsutil/v3 v3.23.12
-	github.com/spf13/pflag v1.0.5
+	github.com/spf13/pflag v1.0.7
 	github.com/spf13/viper v1.18.2
 	github.com/use-go/onvif v0.0.9
 	github.com/zishang520/engine.io-client-go v1.1.0

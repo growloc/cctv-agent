@@ -184,6 +184,32 @@ func NewApplication(configPath string) *Application {
 	app.streamManager = stream.NewManager(app.config, app.logger)
 	app.onvifCtrl = onvif.NewController(app.logger)
 	app.updater = updater.NewUpdater(app.logger, version)
+	// Set the SocketIO client for update checks
+	app.updater.SetSocketIOClient(app.sioClient)
+	// Apply updater config directly
+	// Preserve some fallbacks when fields are zero-valued
+	uc := cfg.Updater
+	if uc.Interval == 0 {
+		if cfg.Agent.UpdateInterval > 0 {
+			uc.Interval = cfg.Agent.UpdateInterval
+		}
+	}
+	if uc.KeepReleases <= 0 {
+		uc.KeepReleases = 3
+	}
+	if uc.HealthTimeout == 0 {
+		uc.HealthTimeout = 30 * time.Second
+	}
+	if uc.BaseDir == "" {
+		uc.BaseDir = "/opt/cctv-agent"
+	}
+	if uc.ServiceName == "" {
+		uc.ServiceName = "cctv-agent"
+	}
+	if uc.Channel == "" {
+		uc.Channel = "stable"
+	}
+	app.updater.ApplyConfig(uc)
 	app.systemMonitor = monitor.NewSystemMonitor(app.logger)
 
 	return app
@@ -192,6 +218,11 @@ func NewApplication(configPath string) *Application {
 // Start starts the application
 func (app *Application) Start() error {
 	app.logger.Info("Starting application components")
+
+	// Updater startup finalize/health
+	if app.updater != nil {
+		app.updater.HandleStartup()
+	}
 
 	// Initialize ONVIF controller if cameras have PTZ
 	for _, camera := range app.config.Cameras {
@@ -247,9 +278,19 @@ func (app *Application) Start() error {
 	})
 
 	// Start background tasks
-	app.wg.Add(2)
+	bgCount := 2
+	if app.updater != nil && app.config.Updater.Enabled {
+		bgCount++
+	}
+	app.wg.Add(bgCount)
 	go app.processCommands()
 	go app.reportStatus()
+	if app.updater != nil && app.config.Updater.Enabled {
+		go func() {
+			defer app.wg.Done()
+			app.updater.RunPeriodic(app.ctx)
+		}()
+	}
 
 	app.logger.Info("Application started successfully")
 	return nil

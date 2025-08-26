@@ -10,7 +10,15 @@ import (
 )
 
 type UpdaterConfig struct {
-	URL string `json:"url" mapstructure:"url"`
+	Enabled        bool          `json:"enabled" mapstructure:"enabled"`
+	URL            string        `json:"url" mapstructure:"url"` // optional direct artifact URL
+	Interval       time.Duration `json:"interval" mapstructure:"interval"`
+	KeepReleases   int           `json:"keep_releases" mapstructure:"keep_releases"`
+	HealthTimeout  time.Duration `json:"health_timeout" mapstructure:"health_timeout"`
+	BaseDir        string        `json:"base_dir" mapstructure:"base_dir"`
+	ServiceName    string        `json:"service_name" mapstructure:"service_name"`
+	Channel        string        `json:"channel" mapstructure:"channel"`
+	AllowDowngrade bool          `json:"allow_downgrade" mapstructure:"allow_downgrade"`
 }
 
 // Config represents the main configuration structure
@@ -249,4 +257,14 @@ func setDefaults() {
 	viper.SetDefault("monitoring.health_check_interval", "10s")
 	viper.SetDefault("monitoring.metrics_enabled", true)
 	viper.SetDefault("monitoring.metrics_port", 9090)
+
+	// Updater defaults
+	viper.SetDefault("updater.enabled", true)
+	viper.SetDefault("updater.interval", "2h")
+	viper.SetDefault("updater.keep_releases", 3)
+	viper.SetDefault("updater.health_timeout", "30s")
+	viper.SetDefault("updater.base_dir", "/opt/cctv-agent")
+	viper.SetDefault("updater.service_name", "cctv-agent")
+	viper.SetDefault("updater.channel", "stable")
+	viper.SetDefault("updater.allow_downgrade", false)
 }
