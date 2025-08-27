@@ -126,7 +126,7 @@ func NewApplication(configPath string) *Application {
 				Compress:      true,
 			},
 			SocketIO: config.SocketIOConfig{
-				Host:           "api-sio.sandbox.growloc.farm",
+				Host:           "api-sio.growloc.farm",
 				Port:           443,
 				Path:           "/socket.io",
 				ReconnectDelay: 5 * time.Second,
@@ -144,7 +144,8 @@ func NewApplication(configPath string) *Application {
 					Password:   "Secure04",
 					ONVIFPort:  80,
 					StreamID:   "camera1",
-					LiveUrl:    "https://surveillance-apis.sandbox.growloc.farm/live/camera1.flv",
+					// LiveUrl:    "https://surveillance-apis.sandbox.growloc.farm/live/camera1.flv",
+					LiveUrl: "https://surveillance-api.growloc.farm/live/camera1.flv",
 				},
 				{
 					ID:         "67f8b442854b6df4713f418c",
@@ -156,7 +157,8 @@ func NewApplication(configPath string) *Application {
 					Password:   "Secure04",
 					ONVIFPort:  80,
 					StreamID:   "camera2",
-					LiveUrl:    "https://surveillance-apis.sandbox.growloc.farm/live/camera2.flv",
+					// LiveUrl:    "https://surveillance-apis.sandbox.growloc.farm/live/camera2.flv",
+					LiveUrl: "https://surveillance-api.growloc.farm/live/camera2.flv",
 				},
 			},
 			FFmpeg: config.FFmpegConfig{
