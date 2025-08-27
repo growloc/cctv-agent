@@ -145,17 +145,6 @@ func NewApplication(configPath string) *Application {
 					ONVIFPort:  80,
 					LiveUrl:    "https://surveillance-apis.sandbox.growloc.farm/live/camera1.flv",
 				},
-				{
-					ID:         "67f8b442854b6df4713f418c",
-					Name:       "R&D Zone 2",
-					RTSPUrl:    "rtsp://admin:Secure04@192.168.0.105:554/Streaming/Unicast/channels/101",
-					Enabled:    true,
-					PTZEnabled: false,
-					Username:   "admin",
-					Password:   "Secure04",
-					ONVIFPort:  80,
-					LiveUrl:    "https://surveillance-apis.sandbox.growloc.farm/live/camera2.flv",
-				},
 			},
 			FFmpeg: config.FFmpegConfig{
 				Preset:       "ultrafast",
