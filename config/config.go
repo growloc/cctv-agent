@@ -54,6 +54,7 @@ type CameraConfig struct {
 	ID         string        `json:"id" mapstructure:"id"`
 	Name       string        `json:"name" mapstructure:"name"`
 	RTSPUrl    string        `json:"rtsp_url" mapstructure:"rtsp_url"`
+	LiveUrl    string        `json:"live_url" mapstructure:"live_url"`
 	Username   string        `json:"username" mapstructure:"username"`
 	Password   string        `json:"password" mapstructure:"password"`
 	ONVIFPort  int           `json:"onvif_port" mapstructure:"onvif_port"`
