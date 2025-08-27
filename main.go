@@ -119,7 +119,7 @@ func NewApplication(configPath string) *Application {
 				ConsoleFormat: "text",
 				FileOutput:    false, // Changed from true
 				FileFormat:    "json",
-				LogDir:        "/opt/growloc/cctv-agent/logs",
+				LogDir:        "/home/growloc/cctv-agent/logs",
 				MaxSize:       100,
 				MaxBackups:    3,
 				MaxAge:        7,
@@ -136,8 +136,8 @@ func NewApplication(configPath string) *Application {
 			Cameras: []config.CameraConfig{
 				{
 					ID:         "67f8b433854b6df4713f418b",
-					Name:       "Camera 1",
-					RTSPUrl:    "rtmp://surveillance-stream.sandbox.growloc.farm:9052/live/camera1",
+					Name:       "R&D Zone 1",
+					RTSPUrl:    "rtsp://admin:Secure04@192.168.0.105:554/Streaming/Unicast/channels/102",
 					Enabled:    true,
 					PTZEnabled: true,
 					Username:   "admin",
@@ -146,8 +146,8 @@ func NewApplication(configPath string) *Application {
 				},
 				{
 					ID:         "67f8b442854b6df4713f418c",
-					Name:       "Camera 2",
-					RTSPUrl:    "rtmp://surveillance-stream.sandbox.growloc.farm:9052/live/camera2",
+					Name:       "R&D Zone 2",
+					RTSPUrl:    "rtsp://admin:Secure04@192.168.0.105:554/Streaming/Unicast/channels/101",
 					Enabled:    true,
 					PTZEnabled: false,
 					Username:   "admin",
@@ -169,9 +169,9 @@ func NewApplication(configPath string) *Application {
 				ExtraArgs:    "-rtsp_transport tcp",
 			},
 			RTMP: config.RTMPConfig{
-				Host:    "localhost",
-				Port:    1935,
-				AppName: "live",
+				Host:    "surveillance-stream.sandbox.growloc.farm",
+				Port:    9052,
+				AppName: "live/camera1",
 			},
 		}
 		fmt.Fprintf(os.Stderr, "Failed to load config, using defaults: %v\n", err)
