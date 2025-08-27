@@ -576,3 +576,40 @@
 {"level":"INFO","timestamp":"2025-08-27T16:41:26.013+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
 {"level":"INFO","timestamp":"2025-08-27T16:41:26.013+0530","caller":"socketio/client.go:156","msg":"Socket.IO client disconnected"}
 {"level":"INFO","timestamp":"2025-08-27T16:41:26.013+0530","caller":"cctv-agent/main.go:367","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:39.345+0530","caller":"cctv-agent/main.go:193","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:39.345+0530","caller":"cctv-agent/main.go:203","msg":"Socket.IO URL configured","url":"wss://api-sio.sandbox.growloc.farm:443","path":"/socket.io"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:39.346+0530","caller":"cctv-agent/main.go:227","msg":"Starting application components"}
+{"level":"ERROR","timestamp":"2025-08-27T16:43:39.346+0530","caller":"cctv-agent/main.go:238","msg":"Failed to connect ONVIF device","camera_id":"camera1","error":"failed to create ONVIF device: camera is not available at http://rtmp://surveillance-stream.sandbox.growloc.farm:9052/live/camera1/onvif/device_service or it does not support ONVIF services"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:39.346+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-27T16:43:39.346+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:39.346+0530","caller":"socketio/client.go:63","msg":"Connecting to Socket.IO server","base":"https://api-sio.sandbox.growloc.farm:443","ns":"/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:39.568+0530","caller":"socketio/client.go:141","msg":"Socket.IO client initialized","base":"https://api-sio.sandbox.growloc.farm:443","ns":"/"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:39.569+0530","caller":"cctv-agent/main.go:343","msg":"Application started successfully"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:39.618+0530","caller":"socketio/client.go:94","msg":"Connected to Socket.IO server"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:39.618+0530","caller":"cctv-agent/main.go:329","msg":"Socket.IO connected"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:39.621+0530","caller":"cctv-agent/main.go:305","msg":"Socket.IO welcome","data":[{"message":"Connected to custom Socket.IO server","socketId":"AcF0bSOYEAxSAlr5AAAT","timestamp":"2025-08-27T11:13:39.625Z"}]}
+{"level":"INFO","timestamp":"2025-08-27T16:43:48.099+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:48.100+0530","caller":"cctv-agent/main.go:349","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:48.100+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:48.100+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:48.100+0530","caller":"socketio/client.go:156","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:48.100+0530","caller":"cctv-agent/main.go:367","msg":"Application shutdown complete"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:48.799+0530","caller":"cctv-agent/main.go:193","msg":"CCTV Agent starting","version":"1.0.0"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:48.799+0530","caller":"cctv-agent/main.go:203","msg":"Socket.IO URL configured","url":"wss://api-sio.sandbox.growloc.farm:443","path":"/socket.io"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:48.799+0530","caller":"cctv-agent/main.go:227","msg":"Starting application components"}
+{"level":"ERROR","timestamp":"2025-08-27T16:43:48.800+0530","caller":"cctv-agent/main.go:238","msg":"Failed to connect ONVIF device","camera_id":"camera1","error":"failed to create ONVIF device: camera is not available at http://rtmp://surveillance-stream.sandbox.growloc.farm:9052/live/camera1/onvif/device_service or it does not support ONVIF services"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:48.800+0530","caller":"stream/manager.go:67","msg":"Starting stream manager"}
+{"level":"WARN","timestamp":"2025-08-27T16:43:48.800+0530","caller":"stream/manager.go:71","msg":"No enabled cameras found"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:48.800+0530","caller":"socketio/client.go:63","msg":"Connecting to Socket.IO server","base":"https://api-sio.sandbox.growloc.farm:443","ns":"/","transport":"websocket"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:48.980+0530","caller":"socketio/client.go:141","msg":"Socket.IO client initialized","base":"https://api-sio.sandbox.growloc.farm:443","ns":"/"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:48.980+0530","caller":"cctv-agent/main.go:343","msg":"Application started successfully"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:49.042+0530","caller":"cctv-agent/main.go:305","msg":"Socket.IO welcome","data":[{"message":"Connected to custom Socket.IO server","socketId":"GcyQgTZ7vv4AriJ-AAAV","timestamp":"2025-08-27T11:13:49.035Z"}]}
+{"level":"INFO","timestamp":"2025-08-27T16:43:49.043+0530","caller":"socketio/client.go:94","msg":"Connected to Socket.IO server"}
+{"level":"INFO","timestamp":"2025-08-27T16:43:49.043+0530","caller":"cctv-agent/main.go:329","msg":"Socket.IO connected"}
+{"level":"INFO","timestamp":"2025-08-27T16:44:14.027+0530","caller":"cctv-agent/main.go:251","msg":"Socket.IO pong","pong":[{"timestamp":"2025-08-27T11:14:14.034Z","type":"pong"}]}
+{"level":"INFO","timestamp":"2025-08-27T16:44:17.257+0530","caller":"cctv-agent/main.go:87","msg":"Shutdown signal received"}
+{"level":"INFO","timestamp":"2025-08-27T16:44:17.257+0530","caller":"cctv-agent/main.go:349","msg":"Shutting down application"}
+{"level":"INFO","timestamp":"2025-08-27T16:44:17.257+0530","caller":"stream/manager.go:172","msg":"Stopping stream manager"}
+{"level":"INFO","timestamp":"2025-08-27T16:44:17.257+0530","caller":"stream/manager.go:185","msg":"Stream manager stopped"}
+{"level":"INFO","timestamp":"2025-08-27T16:44:17.257+0530","caller":"socketio/client.go:156","msg":"Socket.IO client disconnected"}
+{"level":"INFO","timestamp":"2025-08-27T16:44:17.257+0530","caller":"cctv-agent/main.go:367","msg":"Application shutdown complete"}

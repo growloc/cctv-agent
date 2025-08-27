@@ -143,6 +143,7 @@ func NewApplication(configPath string) *Application {
 					Username:   "admin",
 					Password:   "Secure04",
 					ONVIFPort:  80,
+					LiveUrl:    "https://surveillance-apis.sandbox.growloc.farm/live/camera1.flv",
 				},
 				{
 					ID:         "67f8b442854b6df4713f418c",
@@ -153,6 +154,7 @@ func NewApplication(configPath string) *Application {
 					Username:   "admin",
 					Password:   "Secure04",
 					ONVIFPort:  80,
+					LiveUrl:    "https://surveillance-apis.sandbox.growloc.farm/live/camera2.flv",
 				},
 			},
 			FFmpeg: config.FFmpegConfig{
@@ -504,6 +506,7 @@ func (app *Application) sendCameraDetails() {
 			"username":   camera.Username,
 			"password":   camera.Password,
 			"onvifPort":  camera.ONVIFPort,
+			"liveUrl":    camera.LiveUrl,
 		})
 		if camera.Enabled {
 			enabledCount++
