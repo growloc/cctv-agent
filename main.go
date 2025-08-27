@@ -143,7 +143,20 @@ func NewApplication(configPath string) *Application {
 					Username:   "admin",
 					Password:   "Secure04",
 					ONVIFPort:  80,
+					StreamID:   "camera1",
 					LiveUrl:    "https://surveillance-apis.sandbox.growloc.farm/live/camera1.flv",
+				},
+				{
+					ID:         "67f8b442854b6df4713f418c",
+					Name:       "R&D Zone 2",
+					RTSPUrl:    "rtsp://admin:Secure04@192.168.0.105:554/Streaming/Unicast/channels/101",
+					Enabled:    true,
+					PTZEnabled: false,
+					Username:   "admin",
+					Password:   "Secure04",
+					ONVIFPort:  80,
+					StreamID:   "camera2",
+					LiveUrl:    "https://surveillance-apis.sandbox.growloc.farm/live/camera2.flv",
 				},
 			},
 			FFmpeg: config.FFmpegConfig{
@@ -162,7 +175,7 @@ func NewApplication(configPath string) *Application {
 			RTMP: config.RTMPConfig{
 				Host:    "surveillance-stream.sandbox.growloc.farm",
 				Port:    9052,
-				AppName: "live/camera1",
+				AppName: "live",
 			},
 		}
 		fmt.Fprintf(os.Stderr, "Failed to load config, using defaults: %v\n", err)
