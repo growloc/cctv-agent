@@ -135,8 +135,8 @@ func NewApplication(configPath string) *Application {
 			},
 			Cameras: []config.CameraConfig{
 				{
-					ID:         "dummy1",
-					Name:       "Dummy Camera 1",
+					ID:         "67f8b433854b6df4713f418b",
+					Name:       "Dummy Camera 123",
 					RTSPUrl:    "rtsp://dummy:dummy@192.168.1.101:554/stream1",
 					Enabled:    true,
 					PTZEnabled: true,
@@ -145,8 +145,8 @@ func NewApplication(configPath string) *Application {
 					ONVIFPort:  80,
 				},
 				{
-					ID:         "dummy2",
-					Name:       "Dummy Camera 2",
+					ID:         "67f8b442854b6df4713f418c",
+					Name:       "Dummy Camera 213",
 					RTSPUrl:    "rtsp://test:test@192.168.1.102:554/stream1",
 					Enabled:    true,
 					PTZEnabled: false,
@@ -205,6 +205,18 @@ func NewApplication(configPath string) *Application {
 	app.streamManager = stream.NewManager(app.config, app.logger)
 	app.onvifCtrl = onvif.NewController(app.logger)
 	app.updater = updater.NewUpdater(app.logger, version)
+
+	// // Set binary path to user's home directory to avoid permission issues
+	// homeDir, err := os.UserHomeDir()
+	// if err != nil {
+	// 	app.logger.Warn("Could not get user home directory, using default path", "error", err)
+	// } else {
+	// 	// Use ~/.cctv-agent/cctv-agent as the binary path
+	// 	binaryPath := filepath.Join(homeDir, ".cctv-agent", "cctv-agent")
+	// 	app.updater.SetBinaryPath(binaryPath)
+	// 	app.logger.Info("Binary path set", "path", binaryPath)
+	// }
+
 	app.systemMonitor = monitor.NewSystemMonitor(app.logger)
 
 	return app
@@ -240,6 +252,54 @@ func (app *Application) Start() error {
 
 		return nil
 	})
+	app.sioClient.RegisterEventHandler("update_agent", func(data json.RawMessage) error {
+		app.logger.Info("Socket.IO update_agent", "update_agent", data)
+
+		// Parse the incoming data
+		// var updateData struct {
+		// 	UpdateAgent []struct {
+		// 		IsUpdateAvailable bool   `json:"isUpdateAvailable"`
+		// 		SourceClientId    string `json:"sourceClientId"`
+		// 		Timestamp         string `json:"timestamp"`
+		// 	} `json:"update_agent"`
+		// }
+
+		// if err := json.Unmarshal(data, &updateData); err != nil {
+		// 	app.logger.Error("Failed to parse update_agent data", "error", err)
+		// 	return err
+		// }
+
+		// Check if update is available
+		// if len(updateData.UpdateAgent) > 0 && updateData.UpdateAgent[0].IsUpdateAvailable {
+		// 	app.logger.Info("Update available, starting update process",
+		// 		"source_client_id", updateData.UpdateAgent[0].SourceClientId,
+		// 		"timestamp", updateData.UpdateAgent[0].Timestamp)
+
+		// Create UpdateInfo for the updater
+		// Note: You'll need to get these values from your update server or config
+		updateInfo := updater.UpdateInfo{
+			Version:      "1.0.1",                                                                   // This should come from the server or be determined dynamically
+			DownloadURL:  "https://s3.ap-south-2.amazonaws.com/prod.growloc.farm/agents/cctv-agent", // Use the URL from config
+			Checksum:     "",                                                                        // Optional: Add checksum if available
+			ReleaseNotes: "Automatic update triggered by server",
+			Force:        true, // Since server requested update
+		}
+
+		// Perform the update in a goroutine to avoid blocking the event handler
+		go func() {
+			if err := app.updater.PerformUpdate(updateInfo); err != nil {
+				app.logger.Error("Update failed", "error", err)
+				// Optionally send failure notification back to server
+				return
+			}
+			app.logger.Info("Update completed successfully")
+		}()
+		// } else {
+		// 	app.logger.Info("No update available or update not required")
+		// }
+
+		return nil
+	})
 
 	app.sioClient.RegisterEventHandler("welcome", func(data json.RawMessage) error {
 		app.logger.Info("Socket.IO welcome", "data", data)
@@ -252,7 +312,7 @@ func (app *Application) Start() error {
 	})
 
 	app.sioClient.RegisterEventHandler("camera_control_response", func(data json.RawMessage) error {
-		app.logger.Info("Socket.IO camera_control_response", "pong", data)
+		app.logger.Info("Socket.IO camera_control_response", "camera_control_response", data)
 
 		return app.handleCameraControlResponse(data)
 	})
@@ -268,6 +328,7 @@ func (app *Application) Start() error {
 	app.sioClient.OnConnect(func() {
 		app.logger.Info("Socket.IO connected")
 		app.sendRegistration()
+		app.sendCameraDetails()
 	})
 
 	app.sioClient.OnDisconnect(func() {
@@ -429,6 +490,56 @@ func (app *Application) sendRegistration() {
 	}
 }
 
+func (app *Application) sendCameraDetails() {
+	// Collect basic camera info
+	cameraList := make([]map[string]interface{}, 0, len(app.config.Cameras))
+	enabledCount := 0
+	for _, camera := range app.config.Cameras {
+		cameraList = append(cameraList, map[string]interface{}{
+			"id":         camera.ID,
+			"name":       camera.Name,
+			"rtspUrl":    camera.RTSPUrl,
+			"enabled":    camera.Enabled,
+			"ptzEnabled": camera.PTZEnabled,
+			"username":   camera.Username,
+			"password":   camera.Password,
+			"onvifPort":  camera.ONVIFPort,
+		})
+		if camera.Enabled {
+			enabledCount++
+		}
+	}
+
+	// Create welcome data
+	cameraData := map[string]interface{}{
+		"agent_id":        app.config.Agent.ID,
+		"message":         "Agent connected and ready",
+		"timestamp":       time.Now(),
+		"total_cameras":   len(app.config.Cameras),
+		"enabled_cameras": enabledCount,
+		"cameras":         cameraList,
+	}
+
+	// Marshal to JSON
+	data, err := json.Marshal(cameraData)
+	if err != nil {
+		app.logger.Error("Failed to marshal camera data", "error", err)
+		return
+	}
+
+	// Create Message
+	msg := socketio.Message{
+		Type:      "send_cameras_details",
+		Timestamp: time.Now(),
+		Data:      json.RawMessage(data),
+	}
+
+	// Send using SendMessage
+	if err := app.sioClient.SendMessage(msg); err != nil {
+		app.logger.Error("Failed to send camera details", "error", err)
+	}
+}
+
 // sendStatusReport sends status report
 func (app *Application) sendStatusReport() {
 	// Get camera statuses
@@ -522,7 +633,7 @@ func generateSampleConfig() {
 		SocketIO: config.SocketIOConfig{
 			Host:           "localhost",
 			Port:           9054,
-			Path:           "/custom-socket",
+			Path:           "/socket.io",
 			ReconnectDelay: 5 * time.Second,
 			PingInterval:   30 * time.Second,
 			TLS:            false,
@@ -589,7 +700,7 @@ func generateSampleConfigToFile(path string) error {
 		},
 		SocketIO: config.SocketIOConfig{
 			Host:           "localhost",
-			Port:           8080,
+			Port:           9054,
 			Path:           "/socket.io",
 			ReconnectDelay: 5 * time.Second,
 			PingInterval:   30 * time.Second,
@@ -625,7 +736,7 @@ func generateSampleConfigToFile(path string) error {
 			AppName: "live",
 		},
 		Updater: config.UpdaterConfig{
-			URL: "https://updates.example.com/cctv-agent",
+			URL: "https://s3.ap-south-2.amazonaws.com/prod.growloc.farm/agents/cctv-agent",
 		},
 	}
 

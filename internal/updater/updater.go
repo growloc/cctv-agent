@@ -82,7 +82,8 @@ func (u *Updater) PerformUpdate(info UpdateInfo) error {
 	if err != nil {
 		return fmt.Errorf("failed to create temp directory: %w", err)
 	}
-	defer os.RemoveAll(tempDir)
+	u.logger.Info("Created temp directory", "path", tempDir)
+	// defer os.RemoveAll(tempDir)
 
 	// Download new binary
 	tempBinary := filepath.Join(tempDir, "cctv-agent-new")
@@ -97,6 +98,7 @@ func (u *Updater) PerformUpdate(info UpdateInfo) error {
 		}
 	}
 
+	// In the PerformUpdate function, after downloading:
 	// Make binary executable
 	if err := os.Chmod(tempBinary, 0755); err != nil {
 		return fmt.Errorf("failed to set executable permission: %w", err)
@@ -233,12 +235,21 @@ func (u *Updater) replaceBinary(newBinary string) error {
 	if err != nil {
 		return fmt.Errorf("failed to open new binary: %w", err)
 	}
+	u.logger.Info("Replacing binary", "source", newBinary)
 	defer source.Close()
 
+	// parentDir := filepath.Dir(u.binaryPath)
+	// if err := os.MkdirAll(parentDir, 0755); err != nil {
+	// 	return fmt.Errorf("failed to create parent directory %s: %w", parentDir, err)
+	// }
+
 	destination, err := os.Create(u.binaryPath)
+
+	// destination, err := os.Create(u.binaryPath)
 	if err != nil {
 		return fmt.Errorf("failed to create destination: %w", err)
 	}
+	u.logger.Info("Replacing binary", "destination", u.binaryPath)
 	defer destination.Close()
 
 	if _, err := io.Copy(destination, source); err != nil {
