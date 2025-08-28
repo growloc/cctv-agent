@@ -150,7 +150,7 @@ func NewApplication(configPath string) *Application {
 				{
 					ID:         "67f8b442854b6df4713f418c",
 					Name:       "R&D Zone 2",
-					RTSPUrl:    "rtsp://admin:Secure04@192.168.0.105:554/Streaming/Unicast/channels/102",
+					RTSPUrl:    "rtsp://admin:Secure04@192.168.0.105:554/Streaming/Unicast/channels/201",
 					Enabled:    true,
 					PTZEnabled: false,
 					Username:   "admin",
