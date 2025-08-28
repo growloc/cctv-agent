@@ -85,13 +85,36 @@ func (m *Manager) Start() error {
 		m.streams[cam.ID] = stream
 		m.mu.Unlock()
 		
-		// Start stream in goroutine with concurrency control
-		m.eg.Go(func() error {
+		// Start stream in independent goroutine (not using errgroup)
+		go func(s *Stream) {
 			sem <- struct{}{}        // Acquire semaphore
 			defer func() { <-sem }() // Release semaphore
 			
-			return m.runStreamWithRetry(stream)
-		})
+			// Run stream with retry in isolation
+			for {
+				select {
+				case <-m.ctx.Done():
+					return
+				default:
+				}
+				
+				err := m.runStreamWithRetry(s)
+				if err != nil {
+					// Log the error but don't let it affect other streams
+					m.logger.Error("Stream permanently failed", 
+						"camera_id", s.camera.ID, 
+						"error", err)
+					
+					// Wait before attempting to restart the failed stream
+					select {
+					case <-time.After(30 * time.Second):
+						continue // Retry the entire stream
+					case <-m.ctx.Done():
+						return
+					}
+				}
+			}
+		}(stream)
 	}
 	
 	m.logger.Info("Stream manager started", "camera_count", len(cameras))
@@ -124,7 +147,8 @@ func (m *Manager) runStreamWithRetry(stream *Stream) error {
 					"retries", retryCount,
 					"error", err)
 				m.sendStatusUpdate(stream.camera.ID, StatusError, err.Error())
-				return err
+				// Return error to trigger restart cycle in Start() method
+				return fmt.Errorf("stream failed after %d retries: %w", retryCount, err)
 			}
 			
 			m.logger.Warn("Stream failed, retrying",
