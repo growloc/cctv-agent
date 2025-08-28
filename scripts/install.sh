@@ -116,8 +116,11 @@ create_directories() {
     mkdir -p ${LOG_DIR}
     
     # Set permissions
-    chown -R pi:pi ${CONFIG_DIR}
-    chown -R pi:pi ${LOG_DIR}
+    # chown -R pi:pi ${CONFIG_DIR}
+    # chown -R pi:pi ${LOG_DIR}
+
+    chown -R growloc:growloc ${CONFIG_DIR}
+    chown -R growloc:growloc ${LOG_DIR}
     
     print_success "Directories created"
 }
@@ -129,7 +132,8 @@ generate_config() {
     ${INSTALL_DIR}/${BINARY_NAME} --generate-config --config ${CONFIG_DIR}/config.json
     
     # Set permissions
-    chown pi:pi ${CONFIG_DIR}/config.json
+    # chown pi:pi ${CONFIG_DIR}/config.json
+    chown growloc:growloc ${CONFIG_DIR}/config.json
     chmod 644 ${CONFIG_DIR}/config.json
     
     print_success "Configuration generated at ${CONFIG_DIR}/config.json"
