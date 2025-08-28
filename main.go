@@ -137,7 +137,7 @@ func NewApplication(configPath string) *Application {
 				{
 					ID:         "67f8b433854b6df4713f418b",
 					Name:       "R&D Zone 1",
-					RTSPUrl:    "rtsp://admin:Secure04@192.168.0.105:554/Streaming/Unicast/channels/102",
+					RTSPUrl:    "rtsp://admin:Secure04@192.168.0.105:554/Streaming/Unicast/channels/101",
 					Enabled:    true,
 					PTZEnabled: true,
 					Username:   "admin",
@@ -150,7 +150,7 @@ func NewApplication(configPath string) *Application {
 				{
 					ID:         "67f8b442854b6df4713f418c",
 					Name:       "R&D Zone 2",
-					RTSPUrl:    "rtsp://admin:Secure04@192.168.0.105:554/Streaming/Unicast/channels/101",
+					RTSPUrl:    "rtsp://admin:Secure04@192.168.0.105:554/Streaming/Unicast/channels/201",
 					Enabled:    true,
 					PTZEnabled: false,
 					Username:   "admin",
@@ -175,7 +175,7 @@ func NewApplication(configPath string) *Application {
 				ExtraArgs:    "-rtsp_transport tcp",
 			},
 			RTMP: config.RTMPConfig{
-				Host:    "surveillance-stream.sandbox.growloc.farm",
+				Host:    "surveillance-stream.growloc.farm",
 				Port:    9052,
 				AppName: "live",
 			},
@@ -667,7 +667,7 @@ func generateSampleConfig() {
 			VideoCodec:   "libx264",
 			AudioCodec:   "aac",
 			LogLevel:     "error",
-			ExtraArgs:    "-rtsp_transport tcp",
+			ExtraArgs:    "",
 		},
 		RTMP: config.RTMPConfig{
 			Host:    "localhost",

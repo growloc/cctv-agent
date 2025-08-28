@@ -72,6 +72,7 @@ func (s *Stream) Start(ctx context.Context) error {
 	s.logger.Info("Starting FFmpeg stream", "camera_id", s.camera.ID)
 	if err := cmd.Start(); err != nil {
 		s.setStatus(StatusError)
+		s.logger.Error("Failed to start FFmpeg process", "camera_id", s.camera.ID, "error", err, "command", "ffmpeg "+strings.Join(cmd.Args[1:], " "))
 		return fmt.Errorf("failed to start FFmpeg: %w", err)
 	}
 
@@ -86,16 +87,20 @@ func (s *Stream) Start(ctx context.Context) error {
 
 	// Wait for process to complete
 	err = cmd.Wait()
-	
+
 	s.setStatus(StatusDisconnected)
-	
+
 	if err != nil {
 		if streamCtx.Err() == context.Canceled {
 			s.logger.Info("Stream stopped by context cancellation", "camera_id", s.camera.ID)
 			return nil
 		}
 		s.lastError = err
-		s.logger.Error("FFmpeg process exited with error", "camera_id", s.camera.ID, "error", err)
+		if exitError, ok := err.(*exec.ExitError); ok {
+			s.logger.Error("FFmpeg process exited with error", "camera_id", s.camera.ID, "error", err, "exit_code", exitError.ExitCode())
+		} else {
+			s.logger.Error("FFmpeg process exited with error", "camera_id", s.camera.ID, "error", err)
+		}
 		return fmt.Errorf("FFmpeg process exited: %w", err)
 	}
 
@@ -105,7 +110,7 @@ func (s *Stream) Start(ctx context.Context) error {
 // Stop stops the stream
 func (s *Stream) Stop() {
 	s.logger.Info("Stopping stream", "camera_id", s.camera.ID)
-	
+
 	if s.cancelFunc != nil {
 		s.cancelFunc()
 	}
@@ -113,7 +118,7 @@ func (s *Stream) Stop() {
 	if s.cmd != nil && s.cmd.Process != nil {
 		// Give FFmpeg time to exit gracefully
 		time.Sleep(2 * time.Second)
-		
+
 		// Force kill if still running
 		if s.cmd.ProcessState == nil {
 			s.logger.Warn("Force killing FFmpeg process", "camera_id", s.camera.ID)
@@ -133,39 +138,46 @@ func (s *Stream) buildFFmpegCommand(ctx context.Context) *exec.Cmd {
 		s.camera.StreamID,
 	)
 
-	args := []string{
-		"-rtsp_transport", "tcp",
-		"-i", s.camera.RTSPUrl,
+	args := []string{}
+
+	// Add log level first
+	if s.config.FFmpeg.LogLevel != "" {
+		args = append(args, "-loglevel", s.config.FFmpeg.LogLevel)
+	}
+
+	// Add extra arguments before input (like -rtsp_transport tcp)
+	if s.config.FFmpeg.ExtraArgs != "" {
+		extraArgs := strings.Fields(s.config.FFmpeg.ExtraArgs)
+		args = append(args, extraArgs...)
+	}
+
+	// Add input source
+	args = append(args, "-i", s.camera.RTSPUrl)
+
+	// Add video encoding options
+	args = append(args,
 		"-c:v", s.config.FFmpeg.VideoCodec,
 		"-preset", s.config.FFmpeg.Preset,
 		"-tune", s.config.FFmpeg.Tune,
 		"-crf", fmt.Sprintf("%d", s.config.FFmpeg.CRF),
 		"-maxrate", s.config.FFmpeg.MaxRate,
 		"-bufsize", s.config.FFmpeg.BufSize,
+	)
+
+	// Add audio encoding options
+	args = append(args,
 		"-c:a", s.config.FFmpeg.AudioCodec,
 		"-b:a", s.config.FFmpeg.AudioBitrate,
 		"-ar", fmt.Sprintf("%d", s.config.FFmpeg.AudioRate),
-		"-f", "flv",
-	}
+	)
 
-	// Add extra arguments if configured
-	if s.config.FFmpeg.ExtraArgs != "" {
-		extraArgs := strings.Fields(s.config.FFmpeg.ExtraArgs)
-		args = append(args, extraArgs...)
-	}
-
-	// Add log level
-	if s.config.FFmpeg.LogLevel != "" {
-		args = append([]string{"-loglevel", s.config.FFmpeg.LogLevel}, args...)
-	}
-
-	// Add RTMP URL
-	args = append(args, rtmpURL)
+	// Add output format and destination
+	args = append(args, "-f", "flv", rtmpURL)
 
 	cmd := exec.CommandContext(ctx, "ffmpeg", args...)
-	
-	s.logger.Debug("FFmpeg command", "args", strings.Join(args, " "))
-	
+
+	s.logger.Debug("FFmpeg command", "full_command", "ffmpeg "+strings.Join(args, " "))
+
 	return cmd
 }
 
@@ -176,7 +188,7 @@ func (s *Stream) monitorOutput(pipe io.ReadCloser, source string) {
 	scanner := bufio.NewScanner(pipe)
 	for scanner.Scan() {
 		line := scanner.Text()
-		
+
 		// Log based on content
 		if strings.Contains(line, "error") || strings.Contains(line, "Error") {
 			s.logger.Error("FFmpeg error", "camera_id", s.camera.ID, "source", source, "message", line)
