@@ -13,6 +13,7 @@ NC='\033[0m' # No Color
 
 # Configuration
 BINARY_NAME="cctv-agent"
+SOURCE_DIR="/home/growloc/cctv-agent"
 INSTALL_DIR="/usr/local/bin"
 CONFIG_DIR="/etc/cctv-agent"
 LOG_DIR="/var/log/cctv-agent"
@@ -76,6 +77,9 @@ build_binary() {
         exit 1
     fi
     
+    # Change to source directory
+    cd ${SOURCE_DIR}
+    
     # Build the binary
     if [ "$BINARY_SUFFIX" == "-pi" ]; then
         GOOS=linux GOARCH=arm GOARM=7 go build -ldflags "-s -w" -o ${BINARY_NAME}${BINARY_SUFFIX} .
@@ -93,9 +97,9 @@ install_binary() {
     
     # Copy binary to install directory
     if [ -n "$BINARY_SUFFIX" ]; then
-        cp ${BINARY_NAME}${BINARY_SUFFIX} ${INSTALL_DIR}/${BINARY_NAME}
+        cp ${SOURCE_DIR}/${BINARY_NAME}${BINARY_SUFFIX} ${INSTALL_DIR}/${BINARY_NAME}
     else
-        cp ${BINARY_NAME} ${INSTALL_DIR}/${BINARY_NAME}
+        cp ${SOURCE_DIR}/${BINARY_NAME} ${INSTALL_DIR}/${BINARY_NAME}
     fi
     
     chmod +x ${INSTALL_DIR}/${BINARY_NAME}
@@ -136,7 +140,7 @@ install_service() {
     print_info "Installing systemd service..."
     
     # Copy service file
-    cp scripts/cctv-agent.service ${SERVICE_FILE}
+    cp ${SOURCE_DIR}/scripts/cctv-agent.service ${SERVICE_FILE}
     
     # Reload systemd
     systemctl daemon-reload
@@ -191,6 +195,13 @@ main() {
     echo "   CCTV Agent Installation Script"
     echo "======================================"
     echo ""
+    
+    # Check if source directory exists
+    if [ ! -d "${SOURCE_DIR}" ]; then
+        print_error "Source directory ${SOURCE_DIR} does not exist"
+        print_info "Please ensure the CCTV Agent source code is located at ${SOURCE_DIR}"
+        exit 1
+    fi
     
     check_root
     check_architecture
