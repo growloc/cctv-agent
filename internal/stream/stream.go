@@ -153,17 +153,17 @@ func (s *Stream) buildFFmpegCommand(ctx context.Context) *exec.Cmd {
 	// Add video encoding options
 	args = append(args,
 		"-c:v", "libx264",
-		"-preset", "ultrafast",
+		"-preset", "veryfast",
 		"-tune", "zerolatency",
-		"-b:v", "800k",
-		"-maxrate", "800k",
-		"-bufsize", "1600k",
+		"-b:v", "2500k",
+		"-maxrate", "2500k",
+		"-bufsize", "5000k",
 		"-g", "30",
 		"-keyint_min", "30",
 	)
 
-	// Add video filter for scaling and fps
-	args = append(args, "-vf", "scale=640:-1,fps=15")
+	// Add video filter for fps only
+	args = append(args, "-vf", "fps=15")
 
 	// Add audio encoding options
 	args = append(args,
