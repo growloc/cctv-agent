@@ -141,7 +141,7 @@ func (s *Stream) buildFFmpegCommand(ctx context.Context) *exec.Cmd {
 	args := []string{}
 
 	// Add log level first
-	args = append(args, "-loglevel", "error")
+	args = append(args, "-loglevel", "warning")
 
 	// Add RTSP transport options
 	args = append(args, "-rtsp_transport", "tcp")
@@ -163,7 +163,7 @@ func (s *Stream) buildFFmpegCommand(ctx context.Context) *exec.Cmd {
 	)
 
 	// Add video filter for scaling and fps
-	args = append(args, "-vf", "scale=480:-1,fps=15")
+	args = append(args, "-vf", "scale=640:-1,fps=15")
 
 	// Add audio encoding options
 	args = append(args,
@@ -171,6 +171,9 @@ func (s *Stream) buildFFmpegCommand(ctx context.Context) *exec.Cmd {
 		"-b:a", "64k",
 		"-ar", "22050",
 	)
+
+	// Add audio filter for resampling
+	args = append(args, "-af", "aresample=async=1:first_pts=0")
 
 	// Add flags for handling corrupt data
 	args = append(args, "-fflags", "+discardcorrupt")
