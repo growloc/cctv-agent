@@ -141,35 +141,39 @@ func (s *Stream) buildFFmpegCommand(ctx context.Context) *exec.Cmd {
 	args := []string{}
 
 	// Add log level first
-	if s.config.FFmpeg.LogLevel != "" {
-		args = append(args, "-loglevel", s.config.FFmpeg.LogLevel)
-	}
+	args = append(args, "-loglevel", "error")
 
-	// Add extra arguments before input (like -rtsp_transport tcp)
-	if s.config.FFmpeg.ExtraArgs != "" {
-		extraArgs := strings.Fields(s.config.FFmpeg.ExtraArgs)
-		args = append(args, extraArgs...)
-	}
+	// Add RTSP transport options
+	args = append(args, "-rtsp_transport", "tcp")
+	args = append(args, "-rtsp_flags", "+prefer_tcp")
 
 	// Add input source
 	args = append(args, "-i", s.camera.RTSPUrl)
 
 	// Add video encoding options
 	args = append(args,
-		"-c:v", s.config.FFmpeg.VideoCodec,
-		"-preset", s.config.FFmpeg.Preset,
-		"-tune", s.config.FFmpeg.Tune,
-		"-crf", fmt.Sprintf("%d", s.config.FFmpeg.CRF),
-		"-maxrate", s.config.FFmpeg.MaxRate,
-		"-bufsize", s.config.FFmpeg.BufSize,
+		"-c:v", "libx264",
+		"-preset", "ultrafast",
+		"-tune", "zerolatency",
+		"-b:v", "800k",
+		"-maxrate", "800k",
+		"-bufsize", "1600k",
+		"-g", "30",
+		"-keyint_min", "30",
 	)
+
+	// Add video filter for scaling and fps
+	args = append(args, "-vf", "scale=480:-1,fps=15")
 
 	// Add audio encoding options
 	args = append(args,
-		"-c:a", s.config.FFmpeg.AudioCodec,
-		"-b:a", s.config.FFmpeg.AudioBitrate,
-		"-ar", fmt.Sprintf("%d", s.config.FFmpeg.AudioRate),
+		"-c:a", "aac",
+		"-b:a", "64k",
+		"-ar", "22050",
 	)
+
+	// Add flags for handling corrupt data
+	args = append(args, "-fflags", "+discardcorrupt")
 
 	// Add output format and destination
 	args = append(args, "-f", "flv", rtmpURL)
